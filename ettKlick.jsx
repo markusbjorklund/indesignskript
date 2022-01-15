@@ -4,7 +4,7 @@
 //
 // author Markus Björklund
 //
-// version 1.0 
+// version 1.01 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 alert("Detta skript ändrar mejladresser på sidan automatiskt!")
@@ -27,6 +27,17 @@ if(filnamn.match("VBA")) {
     app.findGrepPreferences.findWhat = "@hssmedia.fi";
     app.changeGrepPreferences.changeTo = "@vasabladet.fi";
     app.activeDocument.changeGrep();
+
+    //ändra hänvisningar för vasabladet
+    app.findGrepPreferences.findWhat = "VBL/ÖT";
+    app.changeGrepPreferences.changeTo = "VBL";
+    app.activeDocument.changeGrep();
+    app.findGrepPreferences.findWhat = "ÖT/VBL";
+    app.changeGrepPreferences.changeTo = "VBL";
+    app.activeDocument.changeGrep();
+    app.findGrepPreferences.findWhat = "ÖT";
+    app.changeGrepPreferences.changeTo = "VBL";
+    app.activeDocument.changeGrep();
  }
 
 //ändra mejladresser för ot
@@ -39,6 +50,17 @@ else if(filnamn.match("OTA")) {
     app.activeDocument.changeGrep();
     app.findGrepPreferences.findWhat = "@hssmedia.fi";
     app.changeGrepPreferences.changeTo = "@ot.fi";
+    app.activeDocument.changeGrep();
+
+    //ändra hänvisningar för ot
+    app.findGrepPreferences.findWhat = "VBL/ÖT";
+    app.changeGrepPreferences.changeTo = "ÖT";
+    app.activeDocument.changeGrep();
+    app.findGrepPreferences.findWhat = "ÖT/VBL";
+    app.changeGrepPreferences.changeTo = "ÖT";
+    app.activeDocument.changeGrep();
+    app.findGrepPreferences.findWhat = "VBL";
+    app.changeGrepPreferences.changeTo = "ÖT";
     app.activeDocument.changeGrep();
  }
 
