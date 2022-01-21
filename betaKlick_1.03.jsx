@@ -5,7 +5,7 @@
 // 
 // author Markus Björklund
 //
-// version 1.03
+// version 1.03  
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 alert("Detta skript ändrar mejladresser, hänvisningar och telefonnummer på sidan automatiskt!")
