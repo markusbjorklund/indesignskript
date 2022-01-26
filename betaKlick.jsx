@@ -1,11 +1,11 @@
 ﻿///////////////////////////////////////////////////////////////////////////////////////////////////
-// betaKlick
-// skript för att underlätta redigeringen på HSS Media
-// är ett "work in progress" och mer avancerade funktioner på kommande
+// autoHSS
+// skript för att automatiskt byta till korrekt mejladress på printsidor
 // 
+// även standard hänvisningar och telefonnummer byts automatiskt (på sidlappar och sånt)
+//
 // author Markus Björklund
 //
-// version 1.03  
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 alert("Detta skript ändrar mejladresser, hänvisningar och telefonnummer på sidan automatiskt!")
