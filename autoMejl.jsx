@@ -1,5 +1,5 @@
 ﻿///////////////////////////////////////////////////////////////////////////////////////////////////
-// autoHSS 
+// autoMejl 
 // skript för att automatiskt byta till korrekt mejladress på printsidor
 // 
 // även telefonnummer byts automatiskt (på sidlappar och sånt)
@@ -7,8 +7,6 @@
 // author Markus Björklund
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-
-alert("Detta skript ändrar mejladresser, hänvisningar och telefonnummer på sidan automatiskt!")
 
 // töm sök och ersätt innan skriptet kör
 app.findGrepPreferences = NothingEnum.nothing;
@@ -119,9 +117,3 @@ else if(filnamn.match = ("VBT") || ("OTT")) {
 // töm sök och ersätt innan skriptet avslutas
 app.findGrepPreferences = NothingEnum.nothing;
 app.changeGrepPreferences = NothingEnum.nothing;
-
-// 
-// var sidnummer = app.activeWindow.activePage.name;
-// alert(app.activeDocument.sections.length)
-// alert(app.activeDocument.name)
-//
