@@ -1,5 +1,5 @@
 ﻿///////////////////////////////////////////////////////////////////////////////////////////////////
-// autoHSS
+// autoHSS 
 // skript för att automatiskt byta till korrekt mejladress på printsidor
 // 
 // även telefonnummer byts automatiskt (på sidlappar och sånt)
