@@ -101,6 +101,18 @@ else if(sidnamn.match("OTA")) {
     app.activeDocument.changeGrep();
  }
 
+ // ändra mejladresser för sydin
+else if(sidnamn.match("SYA")) {
+  app.findGrepPreferences.findWhat = "@vasabladet.fi";
+  app.changeGrepPreferences.changeTo = "@sydin.fi";
+  app.activeDocument.changeGrep();
+  app.findGrepPreferences.findWhat = "@ot.fi";
+  app.changeGrepPreferences.changeTo = "@sydin.fi";
+  app.activeDocument.changeGrep();
+  app.findGrepPreferences.findWhat = "@hssmedia.fi";
+  app.changeGrepPreferences.changeTo = "@sydin.fi";
+  app.activeDocument.changeGrep();
+
 // ändra mejladresser för bilagor
 else if(sidnamn.match = ("VBT") || ("OTT")) {
     app.findGrepPreferences.findWhat = "@vasabladet.fi";
