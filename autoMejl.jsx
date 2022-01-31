@@ -13,10 +13,10 @@ app.findGrepPreferences = NothingEnum.nothing;
 app.changeGrepPreferences = NothingEnum.nothing;
 
 // stringa filnamnet på dokumentet
-var filnamn = app.activeDocument.name;
+var sidnamn = app.activeDocument.name;
 
 // ändra mejladresser för vasabladet
-if(filnamn.match("VBA")) {
+if(sidnamn.match("VBA")) {
     app.findGrepPreferences.findWhat = "@ot.fi";
     app.changeGrepPreferences.changeTo = "@vasabladet.fi";
     app.activeDocument.changeGrep();
@@ -57,7 +57,7 @@ if(filnamn.match("VBA")) {
  }
 
 // ändra mejladresser för ot
-else if(filnamn.match("OTA")) {
+else if(sidnamn.match("OTA")) {
     app.findGrepPreferences.findWhat = "@vasabladet.fi";
     app.changeGrepPreferences.changeTo = "@ot.fi";
     app.activeDocument.changeGrep();
@@ -102,7 +102,7 @@ else if(filnamn.match("OTA")) {
  }
 
 // ändra mejladresser för bilagor
-else if(filnamn.match = ("VBT") || ("OTT")) {
+else if(sidnamn.match = ("VBT") || ("OTT")) {
     app.findGrepPreferences.findWhat = "@vasabladet.fi";
     app.changeGrepPreferences.changeTo = "@hssmedia.fi";
     app.activeDocument.changeGrep();
