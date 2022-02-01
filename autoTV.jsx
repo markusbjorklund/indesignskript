@@ -15,7 +15,7 @@ var idag2 = new Date(tvdatum);
 
 idag.setDate(idag.getDate() + 1);
 idag1.setDate(idag1.getDate() + 2);
-idag2.setDate(idag3.getDate() + 3);
+idag2.setDate(idag2.getDate() + 3);
 
 const dayNames = [
   "Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"
