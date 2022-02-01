@@ -112,6 +112,7 @@ else if(sidnamn.match("SYA")) {
   app.findGrepPreferences.findWhat = "@hssmedia.fi";
   app.changeGrepPreferences.changeTo = "@sydin.fi";
   app.activeDocument.changeGrep();
+}
 
 // ändra mejladresser för bilagor
 else if(sidnamn.match = ("VBT") || ("OTT")) {
