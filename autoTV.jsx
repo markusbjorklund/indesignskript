@@ -8,16 +8,14 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-alert("Observera att skriptet baseras på dagens datum, inte utgivningsdag!")
-
 var tvdatum = new Date();
 var idag = new Date(tvdatum);
 var idag1 = new Date(tvdatum);
 var idag2 = new Date(tvdatum);
 
-idag.setDate(tvdatum.getDate() + 1);
-idag1.setDate(tvdatum.getDate() + 2);
-idag2.setDate(tvdatum.getDate() + 3);
+idag.setDate(idag.getDate() + 1);
+idag1.setDate(idag1.getDate() + 2);
+idag2.setDate(idag3.getDate() + 3);
 
 const dayNames = [
   "Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"
@@ -31,10 +29,12 @@ var day = idag.getDay();
 var day1 = idag1.getDay();
 var day2 = idag2.getDay();
 var month = idag.getMonth();
+var month1 = idag1.getMonth();
+var month2 = idag2.getMonth();
 
 idag = dayNames[day] + ' ' + idag.getDate() + ' ' + monthNames[month];
-idag1 = dayNames[day1] + ' ' + idag1.getDate() + ' ' + monthNames[month];
-idag2 = dayNames[day2] + ' ' + idag2.getDate() + ' ' + monthNames[month];
+idag1 = dayNames[day1] + ' ' + idag1.getDate() + ' ' + monthNames[month1];
+idag2 = dayNames[day2] + ' ' + idag2.getDate() + ' ' + monthNames[month2];
 
 // töm sök och ersätt
 app.findGrepPreferences = NothingEnum.nothing;
