@@ -38,9 +38,9 @@ function bytSeriestrip(doc) {
     var medel_strip = new File(servermapp + "medel/" + filnamn + ".jpg");
     medel.place(medel_strip);
 
-    var niemi = doc.rectangles.itemByID(52295);
-    var niemi_strip = new File(servermapp + "niemi/" + filnamn + ".jpg");
-    niemi.place(niemi_strip);
+    var nemi = doc.rectangles.itemByID(52295);
+    var nemi_strip = new File(servermapp + "nemi/" + filnamn + ".jpg");
+    nemi.place(nemi_strip);
 
     var zits = doc.rectangles.itemByID(52298);
     var zits_strip = new File(servermapp + "zits/" + filnamn + ".jpg");
@@ -64,9 +64,9 @@ function bytSeriestrip(doc) {
     var morrgan_strip = new File(servermapp + "morrgan/" + filnamn + ".jpg");
     morrgan.place(morrgan_strip);
 
-    var niemi = doc.rectangles.itemByID(52295);
-    var niemi_strip = new File(servermapp + "niemi/" + filnamn + ".jpg");
-    niemi.place(niemi_strip);
+    var nemi = doc.rectangles.itemByID(52295);
+    var nemi_strip = new File(servermapp + "nemi/" + filnamn + ".jpg");
+    nemi.place(nemi_strip);
 
     var zits = doc.rectangles.itemByID(52298);
     var zits_strip = new File(servermapp + "zits/" + filnamn + ".jpg");
@@ -95,9 +95,9 @@ function bytSeriestrip(doc) {
     var medel_strip = new File(servermapp + "medel/" + filnamn + ".jpg");
     medel.place(medel_strip);
 
-    var niemi = doc.rectangles.itemByID(52295);
-    var niemi_strip = new File(servermapp + "niemi/" + filnamn + ".jpg");
-    niemi.place(niemi_strip);
+    var nemi = doc.rectangles.itemByID(52295);
+    var nemi_strip = new File(servermapp + "nemi/" + filnamn + ".jpg");
+    nemi.place(nemi_strip);
 
     var zits = doc.rectangles.itemByID(52298);
     var zits_strip = new File(servermapp + "zits/" + filnamn + ".jpg");
@@ -121,9 +121,9 @@ function bytSeriestrip(doc) {
       var morrgan_strip = new File(servermapp + "morrgan/" + filnamn + ".jpg");
       morrgan.place(morrgan_strip);
   
-      var niemi = doc.rectangles.itemByID(52295);
-      var niemi_strip = new File(servermapp + "niemi/" + filnamn + ".jpg");
-      niemi.place(niemi_strip);
+      var nemi = doc.rectangles.itemByID(52295);
+      var nemi_strip = new File(servermapp + "nemi/" + filnamn + ".jpg");
+      nemi.place(nemi_strip);
   
       var zits = doc.rectangles.itemByID(52298);
       var zits_strip = new File(servermapp + "zits/" + filnamn + ".jpg");
