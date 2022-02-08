@@ -101,7 +101,7 @@ function bytSeriestrip(doc) {
 
   // höger sida, ojämnt sidnummer
   // ÖT:s strippar
-  else if (sidnummer % 3 == 0 && sidnamn.match("OTA")) {
+  else if (sidnummer % 2 != 0 && sidnamn.match("OTA")) {
 
     // alert(sidnummer + " är ojämnt.");
 
@@ -131,7 +131,7 @@ function bytSeriestrip(doc) {
   }
 
   // VBL:s strippar
-  else if (sidnummer % 3 == 0 && sidnamn.match("VBA")) {
+  else if (sidnummer % 2 != 0 && sidnamn.match("VBA")) {
     var ankeborg = doc.rectangles.itemByID(52279);
     var ankeborg_strip = new File(servermapp + "ankeborg/" + filnamn + ".pdf");
     ankeborg.place(ankeborg_strip);
