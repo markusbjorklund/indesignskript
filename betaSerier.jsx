@@ -131,3 +131,4 @@ function bytSeriestrip(doc) {
     alert("Datorn säger nej!");
   }
 }
+
