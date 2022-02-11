@@ -14,6 +14,7 @@
 .tif - helge, medel, nemi, hagbard
 
 ÖT
+          H,ojämn  V, jämn
 ankeborg, 52237, 52279 
 dragos, 52246, 52282  
 helge, 52252, 52286 
