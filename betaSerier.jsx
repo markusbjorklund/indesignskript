@@ -1,8 +1,8 @@
 ﻿///////////////////////////////////////////////////////////////////////////////////////////////////
-// betaSerier
+// betaSerier, IN PROGRESS
 // skript för att automatiskt montera serier på printsidor
 //
-// helge, nemi och zits är olika i vbl och öt. skiljer cirka ett år kronologiskt
+// helge, nemi och zits är olika i vbl och öt. ¯\_(ツ)_/¯ (skiljer cirka ett år kronologiskt)
 //
 // author Markus Björklund
 //
@@ -36,17 +36,12 @@ bytSeriestrip(app.activeDocument);
 function bytSeriestrip(doc) {
   var sidnummer = app.activeWindow.activePage.name;
   var sidnamn = app.activeDocument.name;
-  var servermapp = "~/Desktop/serier/";
-  var filnamn = "ankeborg";
-
-  // ID är aldrig lika på vänster eller höger sida. ¯\_(ツ)_/¯
+  var servermapp = "~/Desktop/serier/"; // servern måste mappas så den får en drive bokstav
+  var filnamn = "ankeborg"; // filnamn görs med betaDatum, stripparna namnges med Automator
 
   // vänster sida, jämnt sidnummer
   // ÖT:s strippar
   if (sidnummer % 2 == 0 && sidnamn.match("OTA")) {
-
-    // alert(sidnummer + " är jämnt.");
-
     var ankeborg = doc.rectangles.itemByID(52279);
     var ankeborg_strip = new File(servermapp + "ankeborg/" + filnamn + ".pdf");
     ankeborg.place(ankeborg_strip);
@@ -102,9 +97,6 @@ function bytSeriestrip(doc) {
   // höger sida, ojämnt sidnummer
   // ÖT:s strippar
   else if (sidnummer % 2 != 0 && sidnamn.match("OTA")) {
-
-    // alert(sidnummer + " är ojämnt.");
-
     var ankeborg = doc.rectangles.itemByID(52279);
     var ankeborg_strip = new File(servermapp + "ankeborg/" + filnamn + ".pdf");
     ankeborg.place(ankeborg_strip);
@@ -159,6 +151,6 @@ function bytSeriestrip(doc) {
 
   // varning om allt skiter sig
   else {
-    alert("Nånting gick fel. Montera serierna manuellt!");
+    alert("Datorn säger nej!");
   }
 }
