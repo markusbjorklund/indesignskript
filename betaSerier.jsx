@@ -6,7 +6,6 @@
 //
 // author Markus Björklund
 //
-// !!! placing works, just need a way to automate filerenaming !!!
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 bytSeriestrip(app.activeDocument);
@@ -26,8 +25,8 @@ function bytSeriestrip(doc) {
   
   dagens_serier = year + month + day;
 
-  var servermapp = "Z:\\auto\\serier/"; // servern måste mappas så den får en drive bokstav
-  var filnamn = dagens_serier; // filnamn görs med betaDatum, stripparna namnges med Automator
+  var servermapp = "Z:\\auto\\serier/"; // servern måste mappas så den får en drive bokstav (exempel Z:\\auto\\serier/)
+  var filnamn = dagens_serier; 
 
   // vänster sida, jämnt sidnummer
   // ÖT:s strippar
