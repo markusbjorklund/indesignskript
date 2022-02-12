@@ -13,8 +13,20 @@ bytSeriestrip(app.activeDocument);
 function bytSeriestrip(doc) {
   var sidnummer = app.activeWindow.activePage.name;
   var sidnamn = app.activeDocument.name;
-  var servermapp = "~/Desktop/serier/"; // servern måste mappas så den får en drive bokstav
-  var filnamn = "ankeborg"; // filnamn görs med betaDatum, stripparna namnges med Automator
+
+  var datumidag = new Date();
+  var dagens_serier = new Date(datumidag);
+
+  dagens_serier.setDate(dagens_serier.getDate() +1);
+  
+  var day = ("0" + dagens_serier.getDate()).slice(-2);
+  var month = ("0" + (dagens_serier.getMonth() +1)).slice(-2);
+  var year = dagens_serier.getFullYear();
+  
+  dagens_serier = year + month + day;
+
+  var servermapp = "mappa nätverksdriven, klistra in adressen hit"; // servern måste mappas så den får en drive bokstav
+  var filnamn = dagens_serier; // filnamn görs med betaDatum, stripparna namnges med Automator
 
   // vänster sida, jämnt sidnummer
   // ÖT:s strippar
