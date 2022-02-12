@@ -1,11 +1,12 @@
 ﻿///////////////////////////////////////////////////////////////////////////////////////////////////
-// betaSerier, IN PROGRESS
+// betaSerier
 // skript för att automatiskt montera serier på printsidor
 //
 // helge, nemi och zits är olika i vbl och öt. ¯\_(ツ)_/¯ (skiljer cirka ett år kronologiskt)
 //
 // author Markus Björklund
 //
+// !!! placing works, just need a way to automate filerenaming !!!
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 bytSeriestrip(app.activeDocument);
@@ -25,7 +26,7 @@ function bytSeriestrip(doc) {
   
   dagens_serier = year + month + day;
 
-  var servermapp = "mappa nätverksdriven, klistra in adressen hit"; // servern måste mappas så den får en drive bokstav
+  var servermapp = "Z:\\auto\\serier/"; // servern måste mappas så den får en drive bokstav
   var filnamn = dagens_serier; // filnamn görs med betaDatum, stripparna namnges med Automator
 
   // vänster sida, jämnt sidnummer
@@ -63,7 +64,7 @@ function bytSeriestrip(doc) {
     ankeborg.place(ankeborg_strip);
 
     var hagbard = doc.rectangles.itemByID(51098);
-    var dragos_strip = new File(servermapp + "hagbard/" + filnamn + ".tif");
+    var hagbard_strip = new File(servermapp + "hagbard/" + filnamn + ".tif");
     hagbard.place(hagbard_strip);
 
     var helge = doc.rectangles.itemByID(51102);
@@ -118,7 +119,7 @@ function bytSeriestrip(doc) {
     ankeborg.place(ankeborg_strip);
 
     var hagbard = doc.rectangles.itemByID(51092);
-    var dragos_strip = new File(servermapp + "hagbard/" + filnamn + ".tif");
+    var hagbard_strip = new File(servermapp + "hagbard/" + filnamn + ".tif");
     hagbard.place(hagbard_strip);
 
     var helge = doc.rectangles.itemByID(51108);
@@ -143,4 +144,3 @@ function bytSeriestrip(doc) {
     alert("Datorn säger nej!");
   }
 }
-
