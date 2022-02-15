@@ -29,28 +29,28 @@ function monteraTV(doc) {
 
     // jämnt sidnummer
     if (sidnummer % 2 == 0 && sidnamn.match("OTA")) {
-        var tv_V = doc.rectangles.itemByID(52666);
-        var tv_V_0_print = new File(servermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
-        tv_V.place(tv_V_0_print);
+        var tv_print = doc.rectangles.itemByID(52666);
+        var tv_0_print = new File(servermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+        tv_print.place(tv_0_print);
     }
 
     else if (sidnummer % 2 == 0 && sidnamn.match("VBA")) {
-        var tv_V = doc.rectangles.itemByID(51147);
-        var tv_V_0_print = new File(servermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
-        tv_V.place(tv_V_0_print);
+        var tv_print = doc.rectangles.itemByID(51147);
+        var tv_0_print = new File(servermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+        tv_print.place(tv_0_print);
     }
 
     // ojämnt sidnummer
     if (sidnummer % 2 != 0 && sidnamn.match("OTA")) {
-        var tv_V = doc.rectangles.itemByID(52634);
-        var tv_V_0_print = new File(servermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
-        tv_V.place(tv_V_0_print);
+        var tv_print = doc.rectangles.itemByID(52437);
+        var tv_1_print = new File(servermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+        tv_print.place(tv_1_print);
     }
 
     else if (sidnummer % 2 != 0 && sidnamn.match("VBA")) {
-        var tv_V = doc.rectangles.itemByID(51139);
-        var tv_V_0_print = new File(servermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
-        tv_V.place(tv_V_0_print);
+        var tv_print = doc.rectangles.itemByID(51203);
+        var tv_1_print = new File(servermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+        tv_print.place(tv_1_print);
     }
 
     var tvdatum = new Date();
