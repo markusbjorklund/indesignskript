@@ -53,6 +53,10 @@ function monteraTV(doc) {
         tv_print.place(tv_1_print);
     }
 
+    else {
+        alert("Finns inga tv-sidor för den hör dagen ännu!");
+    }
+
     var tvdatum = new Date();
     var idag = new Date(tvdatum);
     var idag1 = new Date(tvdatum);
