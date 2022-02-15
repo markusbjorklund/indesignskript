@@ -85,7 +85,7 @@ function monteraTV(doc) {
     app.findGrepPreferences = NothingEnum.nothing;
     app.changeGrepPreferences = NothingEnum.nothing;
 
-    // ersätt #tvdatum med datum
+    // ersätt 
     app.findGrepPreferences.findWhat = "XXXXX ZZZZZ";
     app.changeGrepPreferences.changeTo = idag + '\n' + idag1 + '\n' + idag2;
     app.activeDocument.changeGrep();
