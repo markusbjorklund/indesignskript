@@ -24,7 +24,7 @@ function monteraTV(doc) {
 
     dagens_tv = year + month + day;
 
-    var servermapp = "Z:\\auto\\tv/"; // servern måste mappas så den får en drive bokstav (exempel Z:\\auto\\serier/)
+    var servermapp = "//server.adress.domain/Diverse/PRINTEN/auto/tv/";
     var filnamn = dagens_tv;
 
     // jämnt sidnummer

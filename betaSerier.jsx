@@ -25,7 +25,7 @@ function bytSeriestrip(doc) {
   
   dagens_serier = year + month + day;
 
-  var servermapp = "Z:\\auto\\serier/"; // servern måste mappas så den får en drive bokstav (exempel Z:\\auto\\serier/)
+  var servermapp = "//server.adress.domain/Diverse/PRINTEN/auto/tv/";
   var filnamn = dagens_serier; 
 
   // vänster sida, jämnt sidnummer
