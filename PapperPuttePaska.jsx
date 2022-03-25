@@ -13,4 +13,7 @@ function PapperPuttePaska(doc) {
   sidMaterial = app.activeWindow.activePage.pageItems;
   app.activeWindow.activePage.groups.add(sidMaterial);
   app.activeWindow.activeSpread.groups.item(0).select();
+  app.copy();
+  app.activeDocument.save();
+  app.activeDocument.close();
 }
