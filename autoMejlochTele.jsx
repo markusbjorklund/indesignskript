@@ -4,11 +4,21 @@
 // 
 // även telefonnummer byts automatiskt (på sidlappar och sånt)
 //
+// BETA, provkör att automatisera blanksteg efter pratminus
 // author Markus Björklund
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // töm sök och ersätt innan skriptet kör
+app.findGrepPreferences = NothingEnum.nothing;
+app.changeGrepPreferences = NothingEnum.nothing;
+
+// fixa till korrekt blanksteg efter pratminus
+app.findGrepPreferences.findWhat = "– ";
+app.changeGrepPreferences.changeTo = "–\\\x{2009}";
+app.activeDocument.changeGrep();
+
+// töm sök och ersätt 
 app.findGrepPreferences = NothingEnum.nothing;
 app.changeGrepPreferences = NothingEnum.nothing;
 
