@@ -18,6 +18,11 @@ app.findGrepPreferences.findWhat = "– ";
 app.changeGrepPreferences.changeTo = "–\\\x{2009}";
 app.activeDocument.changeGrep();
 
+// fixa stupid
+app.findGrepPreferences.findWhat = " –\\\x{2009}";
+app.changeGrepPreferences.changeTo = " – ";
+app.activeDocument.changeGrep();
+
 // töm sök och ersätt 
 app.findGrepPreferences = NothingEnum.nothing;
 app.changeGrepPreferences = NothingEnum.nothing;
