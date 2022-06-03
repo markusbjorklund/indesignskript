@@ -10,8 +10,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // töm sök och ersätt innan skriptet kör
-app.findGrepPreferences = NothingEnum.nothing;
-app.changeGrepPreferences = NothingEnum.nothing;
+//app.findGrepPreferences = NothingEnum.nothing;
+//app.changeGrepPreferences = NothingEnum.nothing;
 
 // fixa till korrekt blanksteg efter pratminus
 app.findGrepPreferences.findWhat = "– ";
@@ -23,9 +23,18 @@ app.findGrepPreferences.findWhat = " –\\\x{2009}";
 app.changeGrepPreferences.changeTo = " – ";
 app.activeDocument.changeGrep();
 
+// fixa dubbla rader på citatrutorna
+app.findGrepPreferences.findWhat = "\\\x{A}";
+app.changeGrepPreferences.changeTo = "";
+app.activeDocument.changeGrep();
+
+app.findGrepPreferences.findWhat = "              \\\x{D}";
+app.changeGrepPreferences.changeTo = "";
+app.activeDocument.changeGrep();
+
 // töm sök och ersätt 
-app.findGrepPreferences = NothingEnum.nothing;
-app.changeGrepPreferences = NothingEnum.nothing;
+//app.findGrepPreferences = NothingEnum.nothing;
+//app.changeGrepPreferences = NothingEnum.nothing;
 
 // stringa filnamnet på dokumentet
 var sidnamn = app.activeDocument.name;
@@ -143,5 +152,5 @@ else if(sidnamn.match = ("VBT") || ("OTT")) {
 }
 
 // töm sök och ersätt innan skriptet avslutas
-app.findGrepPreferences = NothingEnum.nothing;
-app.changeGrepPreferences = NothingEnum.nothing;
+//app.findGrepPreferences = NothingEnum.nothing;
+//app.changeGrepPreferences = NothingEnum.nothing;
