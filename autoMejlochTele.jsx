@@ -24,11 +24,11 @@ app.changeGrepPreferences.changeTo = " – ";
 app.activeDocument.changeGrep();
 
 // fixa dubbla rader på citatrutorna
-app.findGrepPreferences.findWhat = "\\\x{A}";
-app.changeGrepPreferences.changeTo = "";
-app.activeDocument.changeGrep();
+//app.findGrepPreferences.findWhat = "\\\x{A}";
+//app.changeGrepPreferences.changeTo = "";
+//app.activeDocument.changeGrep();
 
-app.findGrepPreferences.findWhat = "              \\\x{D}";
+app.findGrepPreferences.findWhat = "\\\x{A}              \\\x{D}";
 app.changeGrepPreferences.changeTo = "";
 app.activeDocument.changeGrep();
 
