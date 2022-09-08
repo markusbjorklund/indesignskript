@@ -1,10 +1,9 @@
 ﻿///////////////////////////////////////////////////////////////////////////////////////////////////
-// autoMejl 
-// skript för att automatiskt byta till korrekt mejladress på printsidor
 // 
-// även telefonnummer byts automatiskt (på sidlappar och sånt)
+// skript för att automatiskt byta till korrekt mejladress på printsidor och kör lite allmänt puts
+// 
+// telefonnummer byts automatiskt (på sidlappar och sånt)
 //
-// BETA, provkör att automatisera blanksteg efter pratminus
 // author Markus Björklund
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
