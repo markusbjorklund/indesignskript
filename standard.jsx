@@ -151,5 +151,5 @@ else if(sidnamn.match = ("VBT") || ("OTT")) {
 }
 
 // töm sök och ersätt innan skriptet avslutas
-//app.findGrepPreferences = NothingEnum.nothing;
-//app.changeGrepPreferences = NothingEnum.nothing;
+app.findGrepPreferences = NothingEnum.nothing;
+app.changeGrepPreferences = NothingEnum.nothing;
