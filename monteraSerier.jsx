@@ -29,7 +29,7 @@ function dialogWRadio(dlgName, cancelIt) {
     
     // filmappning
     var servermapp = "//npfileserver.tidningen.fi/";
-    var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/serier/ ";
+    var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/serier/";
 
     if (dlgRef.show() == true) {
         var radioValue = rGroup.selectedButton;
@@ -115,15 +115,15 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_serie;
 
             var zits = app.activeDocument.links.itemByName("ZTSyd_Dummy.TIF.jpg").parent;
-            var zits_strip = new File(servermapp + foldermapp + "sydin/zits/ZTSyd_" + filnamn + ".pdf");
+            var zits_strip = new File(servermapp + foldermapp + "sydin/zits/ZTSyd_" + filnamn + ".tif");
             zits.place(zits_strip);
 
             var helge = app.activeDocument.links.itemByName("HESY_Dummy.tif.jpg").parent;
-            var helge_strip = new File(servermapp + foldermapp + "sydin/helge/HESY_" + filnamn + ".pdf");
+            var helge_strip = new File(servermapp + foldermapp + "sydin/helge/HESY_" + filnamn + ".tif");
             helge.place(helge_strip);
 
-            var medel = app.activeDocument.links.itemByName("MEDSY_Dummy.TIF.jpg").parent;
-            var medel_strip = new File(servermapp + foldermapp + "sydin/medel/MEDSY_" + filnamn + ".pdf");
+            var medel = app.activeDocument.links.itemByName("MEDSY_Dummy.tif.jpg").parent;
+            var medel_strip = new File(servermapp + foldermapp + "sydin/medel/MEDSY_" + filnamn + ".tif");
             medel.place(medel_strip);
         }
 
