@@ -24,12 +24,9 @@ function dialogWRadio(dlgName, cancelIt) {
     rGroup.radiobuttonControls.add({ staticLabel: "I morgon" });
     rGroup.radiobuttonControls.add({ staticLabel: "I övermorgon" });
 
-    // sidinformation
-    // var sidnamn = app.activeDocument.name;
-
     // filmappning
     var servermapp = "//npfileserver.tidningen.fi/";
-    var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/tv/ ";
+    var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/tv/";
 
     if (dlgRef.show() == true) {
         var radioValue = rGroup.selectedButton;
@@ -58,44 +55,41 @@ function dialogWRadio(dlgName, cancelIt) {
             dagens_tv = year + month + day;
             var filnamn = dagens_tv;
 
-            if (antalSidor > 1 ) {
-                alert("många sidor");
-                    var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-                    var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
-                    tv_print.place(tv_0_print);
-                    var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                    var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-                    tv_h_print.place(tv_1_print);
-                }
-            
+            if (antalSidor > 1) {
+                var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
+                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                tv_print.place(tv_0_print);
+                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
+                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                tv_h_print.place(tv_1_print);
+            }
+
             else if (app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").isValid) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
                 var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
-                }
-            
+            }
+
             else if (app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").isValid) {
                 var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
                 var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
                 tv_h_print.place(tv_1_print);
-                }
-        
+            }
+
             datumrad.setDate(datumrad.getDate() + 1);
             var day = datumrad.getDay();
             var month = datumrad.getMonth();
             datumrad = dayNames[day] + ' ' + datumrad.getDate() + ' ' + monthNames[month];
-        
-            alert(datumrad);
-        
+
             // töm sök och ersätt
             app.findGrepPreferences = NothingEnum.nothing;
             app.changeGrepPreferences = NothingEnum.nothing;
-        
+
             // ersätt placeholder med datum
             app.findGrepPreferences.findWhat = "XXXXX ZZZZZ";
             app.changeGrepPreferences.changeTo = datumrad;
             app.activeDocument.changeGrep();
-        
+
             // töm sök och ersätt innan skriptet avslutas
             app.findGrepPreferences = NothingEnum.nothing;
             app.changeGrepPreferences = NothingEnum.nothing;
@@ -109,35 +103,45 @@ function dialogWRadio(dlgName, cancelIt) {
             var year = ("" + (dagens_tv.getFullYear() + 0)).slice(-2);
             dagens_tv = year + month + day;
             var filnamn = dagens_tv;
-            alert(filnamn);
 
-            // var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-            // var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
-            // tv_print.place(tv_0_print);
-            // var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-            // var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-            // tv_h_print.place(tv_1_print);
+            if (antalSidor > 1) {
+                var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
+                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                tv_print.place(tv_0_print);
+                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
+                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                tv_h_print.place(tv_1_print);
+            }
+
+            else if (app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").isValid) {
+                var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
+                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                tv_print.place(tv_0_print);
+            }
+
+            else if (app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").isValid) {
+                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
+                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                tv_h_print.place(tv_1_print);
+            }
 
             datumrad.setDate(datumrad.getDate() + 2);
             var day = datumrad.getDay();
             var month = datumrad.getMonth();
             datumrad = dayNames[day] + ' ' + datumrad.getDate() + ' ' + monthNames[month];
-            
-            alert(datumrad);
-        
+
             // töm sök och ersätt
             app.findGrepPreferences = NothingEnum.nothing;
             app.changeGrepPreferences = NothingEnum.nothing;
-        
+
             // ersätt placeholder med datum
             app.findGrepPreferences.findWhat = "XXXXX ZZZZZ";
             app.changeGrepPreferences.changeTo = datumrad;
             app.activeDocument.changeGrep();
-        
+
             // töm sök och ersätt innan skriptet avslutas
             app.findGrepPreferences = NothingEnum.nothing;
             app.changeGrepPreferences = NothingEnum.nothing;
-
         }
 
         // tv-tablåer för i övermorgon
@@ -148,31 +152,42 @@ function dialogWRadio(dlgName, cancelIt) {
             var year = ("" + (dagens_tv.getFullYear() + 0)).slice(-2);
             dagens_tv = year + month + day;
             var filnamn = dagens_tv;
-            alert(filnamn);
 
-            // var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-            // var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
-            // tv_print.place(tv_0_print);
-            // var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-            // var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-            // tv_h_print.place(tv_1_print);
+            if (antalSidor > 1) {
+                var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
+                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                tv_print.place(tv_0_print);
+                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
+                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                tv_h_print.place(tv_1_print);
+            }
+
+            else if (app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").isValid) {
+                var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
+                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                tv_print.place(tv_0_print);
+            }
+
+            else if (app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").isValid) {
+                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
+                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                tv_h_print.place(tv_1_print);
+            }
 
             datumrad.setDate(datumrad.getDate() + 3);
             var day = datumrad.getDay();
             var month = datumrad.getMonth();
             datumrad = dayNames[day] + ' ' + datumrad.getDate() + ' ' + monthNames[month];
 
-            alert(datumrad);
-        
             // töm sök och ersätt
             app.findGrepPreferences = NothingEnum.nothing;
             app.changeGrepPreferences = NothingEnum.nothing;
-        
+
             // ersätt placeholder med datum
             app.findGrepPreferences.findWhat = "XXXXX ZZZZZ";
             app.changeGrepPreferences.changeTo = datumrad;
             app.activeDocument.changeGrep();
-        
+
             // töm sök och ersätt innan skriptet avslutas
             app.findGrepPreferences = NothingEnum.nothing;
             app.changeGrepPreferences = NothingEnum.nothing;
