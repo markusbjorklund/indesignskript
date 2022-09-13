@@ -25,7 +25,7 @@ function dialogWRadio(dlgName, cancelIt) {
     rGroup.radiobuttonControls.add({ staticLabel: "I övermorgon" });
 
     // filmappning
-    var servermapp = "//npfileserver.tidningen.fi/";
+    var servermapp = "//serveradressen kommer hit/";
     var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/tv/";
 
     if (dlgRef.show() == true) {
