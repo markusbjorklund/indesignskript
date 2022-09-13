@@ -26,10 +26,12 @@ var filnamn = dagens_vader;
 if (sidnamn.match("VBA") || sidnamn.match("OTA")) {
     var vader = app.activeDocument.links.itemByName("vader_Dummy_.jpg").parent;
     var vader_pdf = new File(servermapp + foldermapp + filnamn + "VasaBladet14.pdf");
+    vader.place(vader_pdf);
 }
 
 // sydin
 else if (sidnamn.match("SYA")) {
     var vader = app.activeDocument.links.itemByName("fmisy_Dummy.pdf.jpg").parent;
     var vader_pdf = new File(servermapp + foldermapp + filnamn + "Syd-Osterbotten14.pdf");
+    vader.place(vader_pdf);
 }
