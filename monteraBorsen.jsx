@@ -10,6 +10,19 @@
 var servermapp = "//npfileserver.tidningen.fi/";
 var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/borsen/";
 
-var borsspalten = app.activeDocument.links.itemByName("Borsen_Dummy.pdf.jpg").parent;
-var borsspalten_strip = new File(servermapp + foldermapp + "Vasabladet.pdf");
-borsspalten.place(borsspalten_strip);
+// kör in fyra börsspalter så finns det på alla mallar i paletten sidor
+var borsspalten = app.activeDocument.links.itemByName("borsen_Dummy.jpg").parent;
+var borsspalten_pdf = new File(servermapp + foldermapp + "Vasabladet.pdf");
+borsspalten.place(borsspalten_pdf);
+
+var borsspalten = app.activeDocument.links.itemByName("borsen_Dummy.jpg").parent;
+var borsspalten_pdf = new File(servermapp + foldermapp + "Vasabladet.pdf");
+borsspalten.place(borsspalten_pdf);
+
+var borsspalten = app.activeDocument.links.itemByName("borsen_Dummy.jpg").parent;
+var borsspalten_pdf = new File(servermapp + foldermapp + "Vasabladet.pdf");
+borsspalten.place(borsspalten_pdf);
+
+var borsspalten = app.activeDocument.links.itemByName("borsen_Dummy.jpg").parent;
+var borsspalten_pdf = new File(servermapp + foldermapp + "Vasabladet.pdf");
+borsspalten.place(borsspalten_pdf);
