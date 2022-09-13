@@ -5,7 +5,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 klonaSida(app.activeDocument);
-
+ 
 function klonaSida(doc) {
   app.activeDocument.save();  
   doc.layers.everyItem().locked = false;
