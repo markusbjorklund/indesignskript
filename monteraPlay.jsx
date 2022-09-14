@@ -22,3 +22,4 @@ var filnamn = play_datum;
 
 var play = app.activeDocument.links.itemByName("play_Dummy.jpg").parent;
 var play_pdf = new File(servermapp + foldermapp + filnamn + "-TVRVKO-PLAY-0-0-print.pdf");
+play.place(play_pdf);
