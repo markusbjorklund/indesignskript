@@ -106,7 +106,7 @@ function dialogWRadio(dlgName, cancelIt) {
         }
 
         // sydins strippar för i dag
-        else if (radioValue == 0 && sidnamn.match("SYA")) {
+        else if (radioValue == 0 && sidnamn.match("SY")) {
             dagens_serie.setDate(dagens_serie.getDate() + 1);
             var day = ("0" + dagens_serie.getDate()).slice(-2);
             var month = ("0" + (dagens_serie.getMonth() + 1)).slice(-2);
@@ -196,7 +196,7 @@ function dialogWRadio(dlgName, cancelIt) {
         }
 
         // sydins strippar för i morgon
-        else if (radioValue == 1 && sidnamn.match("SYA")) {
+        else if (radioValue == 1 && sidnamn.match("SY")) {
             dagens_serie.setDate(dagens_serie.getDate() + 2);
             var day = ("0" + dagens_serie.getDate()).slice(-2);
             var month = ("0" + (dagens_serie.getMonth() + 1)).slice(-2);
@@ -286,7 +286,7 @@ function dialogWRadio(dlgName, cancelIt) {
         }
 
         // sydins strippar för i övermorgon
-        else if (radioValue == 2 && sidnamn.match("SYA")) {
+        else if (radioValue == 2 && sidnamn.match("SY")) {
             dagens_serie.setDate(dagens_serie.getDate() + 3);
             var day = ("0" + dagens_serie.getDate()).slice(-2);
             var month = ("0" + (dagens_serie.getMonth() + 1)).slice(-2);

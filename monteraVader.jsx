@@ -30,7 +30,7 @@ if (sidnamn.match("VBA") || sidnamn.match("OTA")) {
 }
 
 // sydin
-else if (sidnamn.match("SYA")) {
+else if (sidnamn.match("SY")) {
     var vader = app.activeDocument.links.itemByName("fmisy_Dummy.pdf.jpg").parent;
     var vader_pdf = new File(servermapp + foldermapp + filnamn + "Syd-Osterbotten14.pdf");
     vader.place(vader_pdf);
