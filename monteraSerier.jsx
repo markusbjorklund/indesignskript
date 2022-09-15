@@ -38,7 +38,7 @@ function dialogWRadio(dlgName, cancelIt) {
         var dagens_serie = new Date();
 
         // vbl:s strippar för i dag
-        if (radioValue == 0 && sidnamn.match("VBA")) {
+        if (radioValue == 0 && sidnamn.match("VB")) {
             dagens_serie.setDate(dagens_serie.getDate() + 1);
             var day = ("0" + dagens_serie.getDate()).slice(-2);
             var month = ("0" + (dagens_serie.getMonth() + 1)).slice(-2);
@@ -72,7 +72,7 @@ function dialogWRadio(dlgName, cancelIt) {
         }
 
         // öt:s strippar för i dag
-        else if (radioValue == 0 && sidnamn.match("OTA")) {
+        else if (radioValue == 0 && sidnamn.match("OT")) {
             dagens_serie.setDate(dagens_serie.getDate() + 1);
             var day = ("0" + dagens_serie.getDate()).slice(-2);
             var month = ("0" + (dagens_serie.getMonth() + 1)).slice(-2);
@@ -128,7 +128,7 @@ function dialogWRadio(dlgName, cancelIt) {
         }
 
         // vbl:s strippar för i morgon
-        else if (radioValue == 1 && sidnamn.match("VBA")) {
+        else if (radioValue == 1 && sidnamn.match("VB")) {
             dagens_serie.setDate(dagens_serie.getDate() + 2);
             var day = ("0" + dagens_serie.getDate()).slice(-2);
             var month = ("0" + (dagens_serie.getMonth() + 1)).slice(-2);
@@ -162,7 +162,7 @@ function dialogWRadio(dlgName, cancelIt) {
         }
 
         // öt:s strippar för i morgon
-        else if (radioValue == 1 && sidnamn.match("OTA")) {
+        else if (radioValue == 1 && sidnamn.match("OT")) {
             dagens_serie.setDate(dagens_serie.getDate() + 2);
             var day = ("0" + dagens_serie.getDate()).slice(-2);
             var month = ("0" + (dagens_serie.getMonth() + 1)).slice(-2);
