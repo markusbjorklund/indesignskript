@@ -23,7 +23,7 @@ dagens_vader = day + month;
 var filnamn = dagens_vader;
 
 // vbl och öt
-if (sidnamn.match("VBA") || sidnamn.match("OTA")) {
+if (sidnamn.match("VB") || sidnamn.match("OT")) {
     var vader = app.activeDocument.links.itemByName("vader_Dummy_.jpg").parent;
     var vader_pdf = new File(servermapp + foldermapp + filnamn + "VasaBladet14.pdf");
     vader.place(vader_pdf);
