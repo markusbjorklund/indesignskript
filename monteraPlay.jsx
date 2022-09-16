@@ -2,13 +2,12 @@
 // 
 // skript för att automatiskt montera play-tablån på printsidor
 //
-// author Markus Björklund and the internet
-//
+// author Markus Björklund
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // filmappning
 var servermapp = "//serveradressen kommer hit/";
-var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/play/";
+var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/tv/";
 
 // datum för play-tablån
 var play_datum = new Date();
