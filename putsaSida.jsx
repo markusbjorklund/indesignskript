@@ -39,7 +39,7 @@ app.activeDocument.changeGrep();
 var sidnamn = app.activeDocument.name;
 
 // ändra mejladresser för vasabladet
-if(sidnamn.match("VBA")) {
+if(sidnamn.match("VB")) {
     app.findGrepPreferences.findWhat = "@ot.fi";
     app.changeGrepPreferences.changeTo = "@vasabladet.fi";
     app.activeDocument.changeGrep();
@@ -80,7 +80,7 @@ if(sidnamn.match("VBA")) {
  }
 
 // ändra mejladresser för ot
-else if(sidnamn.match("OTA")) {
+else if(sidnamn.match("OT")) {
     app.findGrepPreferences.findWhat = "@vasabladet.fi";
     app.changeGrepPreferences.changeTo = "@ot.fi";
     app.activeDocument.changeGrep();
@@ -125,7 +125,7 @@ else if(sidnamn.match("OTA")) {
  }
 
  // ändra mejladresser för sydin
-else if(sidnamn.match("SYA")) {
+else if(sidnamn.match("SY")) {
   app.findGrepPreferences.findWhat = "@vasabladet.fi";
   app.changeGrepPreferences.changeTo = "@sydin.fi";
   app.activeDocument.changeGrep();
