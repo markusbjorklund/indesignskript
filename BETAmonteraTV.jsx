@@ -195,7 +195,7 @@ function dialogWRadio(dlgName, cancelIt) {
         }
 
         // tv-tablåer för Sydins fjärde tv-tablå på måndagar
-        else if (radioValue == 2) {
+        else if (radioValue == 3) {
             dagens_tv.setDate(dagens_tv.getDate() + 4);
             var day = ("0" + dagens_tv.getDate()).slice(-2);
             var month = ("0" + (dagens_tv.getMonth() + 1)).slice(-2);
@@ -206,9 +206,6 @@ function dialogWRadio(dlgName, cancelIt) {
             var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
             var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
             tv_print.place(tv_0_print);
-            var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-            var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-            tv_h_print.place(tv_1_print);
 
             datumrad.setDate(datumrad.getDate() + 4);
             var day = datumrad.getDay();
