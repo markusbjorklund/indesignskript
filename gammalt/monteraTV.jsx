@@ -2,7 +2,7 @@
 // 
 // skript för att automatiskt montera TV-tablåerna på printsidor
 //
-// möjligt att välja i dag, i morgon, i övermorgon eller i överövermorgon(Sydin)
+// möjligt att välja i dag, i morgon eller i övermorgon
 //
 // author Markus Björklund
 //
@@ -23,7 +23,6 @@ function dialogWRadio(dlgName, cancelIt) {
     rGroup.radiobuttonControls.add({ staticLabel: "I dag", checkedState: true });
     rGroup.radiobuttonControls.add({ staticLabel: "I morgon" });
     rGroup.radiobuttonControls.add({ staticLabel: "I övermorgon" });
-    rGroup.radiobuttonControls.add({ staticLabel: "I överövermorgon" });
 
     // filmappning
     var servermapp = "//serveradressen kommer hit/";
@@ -176,38 +175,6 @@ function dialogWRadio(dlgName, cancelIt) {
             }
 
             datumrad.setDate(datumrad.getDate() + 3);
-            var day = datumrad.getDay();
-            var month = datumrad.getMonth();
-            datumrad = dayNames[day] + ' ' + datumrad.getDate() + ' ' + monthNames[month];
-
-            // töm sök och ersätt
-            app.findGrepPreferences = NothingEnum.nothing;
-            app.changeGrepPreferences = NothingEnum.nothing;
-
-            // ersätt placeholder med datum
-            app.findGrepPreferences.findWhat = "XXXXX ZZZZZ";
-            app.changeGrepPreferences.changeTo = datumrad;
-            app.activeDocument.changeGrep();
-
-            // töm sök och ersätt innan skriptet avslutas
-            app.findGrepPreferences = NothingEnum.nothing;
-            app.changeGrepPreferences = NothingEnum.nothing;
-        }
-
-        // tv-tablåer för Sydins fjärde tv-tablå på måndagar
-        else if (radioValue == 3) {
-            dagens_tv.setDate(dagens_tv.getDate() + 4);
-            var day = ("0" + dagens_tv.getDate()).slice(-2);
-            var month = ("0" + (dagens_tv.getMonth() + 1)).slice(-2);
-            var year = ("" + (dagens_tv.getFullYear() + 0)).slice(-2);
-            dagens_tv = year + month + day;
-            var filnamn = dagens_tv;
-
-            var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-            var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
-            tv_print.place(tv_0_print);
-
-            datumrad.setDate(datumrad.getDate() + 4);
             var day = datumrad.getDay();
             var month = datumrad.getMonth();
             datumrad = dayNames[day] + ' ' + datumrad.getDate() + ' ' + monthNames[month];
