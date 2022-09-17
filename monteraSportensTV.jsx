@@ -55,25 +55,16 @@ function dialogWRadio(dlgName, cancelIt) {
             var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRSPT-SPT-0-0-print" + ".pdf");
             tv_print.place(tv_0_print);
 
-
             datumrad.setDate(datumrad.getDate() + 1);
             var day = datumrad.getDay();
             datumrad = dayNames[day];
             datumradHelg1 = dayNames[day];
             datumradHelg2 = dayNames[day];
 
-            // töm sök och ersätt
-            app.findGrepPreferences = NothingEnum.nothing;
-            app.changeGrepPreferences = NothingEnum.nothing;
-
             // ersätt placeholder med datum
             app.findGrepPreferences.findWhat = "TABLA_1";
             app.changeGrepPreferences.changeTo = datumrad;
             app.activeDocument.changeGrep();
-
-            // töm sök och ersätt innan skriptet avslutas
-            app.findGrepPreferences = NothingEnum.nothing;
-            app.changeGrepPreferences = NothingEnum.nothing;
         }
 
         // tv-tablåer för 2 dagar
@@ -108,17 +99,14 @@ function dialogWRadio(dlgName, cancelIt) {
             var day = datumradHelg1.getDay();
             datumradHelg1 = dayNames[day];
 
-
             // ersätt placeholder med datum
             app.findGrepPreferences.findWhat = "TABLA_1";
             app.changeGrepPreferences.changeTo = datumrad;
             app.activeDocument.changeGrep();
 
-            // ersätt placeholder med datum
             app.findGrepPreferences.findWhat = "TABLA_2";
             app.changeGrepPreferences.changeTo = datumradHelg1;
             app.activeDocument.changeGrep();
-
         }
 
         // tv-tablåer för 3 dagar
@@ -173,12 +161,10 @@ function dialogWRadio(dlgName, cancelIt) {
             app.changeGrepPreferences.changeTo = datumrad;
             app.activeDocument.changeGrep();
 
-            // ersätt placeholder med datum
             app.findGrepPreferences.findWhat = "TABLA_2";
             app.changeGrepPreferences.changeTo = datumradHelg1;
             app.activeDocument.changeGrep();
 
-            // ersätt placeholder med datum
             app.findGrepPreferences.findWhat = "TABLA_3";
             app.changeGrepPreferences.changeTo = datumradHelg2;
             app.activeDocument.changeGrep();
