@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 
-// skript för att automatiskt montera sporten TV-tablåer på printsidor
+// skript för att automatiskt montera sportens TV-tablåer på printsidor
 //
 // author Markus Björklund
 //
