@@ -8,6 +8,10 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+// töm sök och ersätt innan skriptet kör
+//app.findGrepPreferences = NothingEnum.nothing;
+//app.changeGrepPreferences = NothingEnum.nothing;
+
 // fixa till korrekt blanksteg efter pratminus
 app.findGrepPreferences.findWhat = "– ";
 app.changeGrepPreferences.changeTo = "–\\\x{2009}";
@@ -19,9 +23,9 @@ app.changeGrepPreferences.changeTo = " – ";
 app.activeDocument.changeGrep();
 
 // fixa mellanslaget efter ortnamnet - TILLSATT 19.9.2022
-app.findGrepPreferences.findWhat = " .  ";
-app.changeGrepPreferences.changeTo = ". ";
-app.activeDocument.changeGrep();
+//app.findGrepPreferences.findWhat = " .  ";
+//app.changeGrepPreferences.changeTo = ". ";
+//app.activeDocument.changeGrep();
 
 // fixa dubbla rader på citatrutorna
 //app.findGrepPreferences.findWhat = "\\\x{A}";
@@ -40,7 +44,7 @@ app.activeDocument.changeGrep();
 var sidnamn = app.activeDocument.name;
 
 // ändra mejladresser för vasabladet
-if(sidnamn.match("VB")) {
+if(sidnamn.match("VB-") || sidnamn.match("VBA")) {
     app.findGrepPreferences.findWhat = "@ot.fi";
     app.changeGrepPreferences.changeTo = "@vasabladet.fi";
     app.activeDocument.changeGrep();
@@ -81,7 +85,7 @@ if(sidnamn.match("VB")) {
  }
 
 // ändra mejladresser för ot
-else if(sidnamn.match("OT")) {
+else if(sidnamn.match("OT-") || sidnamn.match("OTA")) {
     app.findGrepPreferences.findWhat = "@vasabladet.fi";
     app.changeGrepPreferences.changeTo = "@ot.fi";
     app.activeDocument.changeGrep();
@@ -126,7 +130,7 @@ else if(sidnamn.match("OT")) {
  }
 
  // ändra mejladresser för sydin
-else if(sidnamn.match("SY")) {
+else if(sidnamn.match("SY-") || sidnamn.match("SYA")) {
   app.findGrepPreferences.findWhat = "@vasabladet.fi";
   app.changeGrepPreferences.changeTo = "@sydin.fi";
   app.activeDocument.changeGrep();
@@ -139,7 +143,7 @@ else if(sidnamn.match("SY")) {
 }
 
 // ändra mejladresser för bilagor
-else if(sidnamn.match = ("VBT") || ("OTT")) {
+else if(sidnamn.match("VBT1-") || sidnamn.match("OTT1-") || sidnamn.match("SYTT1-")) {
     app.findGrepPreferences.findWhat = "@vasabladet.fi";
     app.changeGrepPreferences.changeTo = "@hssmedia.fi";
     app.activeDocument.changeGrep();
