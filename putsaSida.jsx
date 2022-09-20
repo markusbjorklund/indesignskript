@@ -22,10 +22,10 @@ app.findGrepPreferences.findWhat = " –\\\x{2009}";
 app.changeGrepPreferences.changeTo = " – ";
 app.activeDocument.changeGrep();
 
-// fixa mellanslaget efter ortnamnet - TILLSATT 19.9.2022
-//app.findGrepPreferences.findWhat = " .  ";
-//app.changeGrepPreferences.changeTo = ". ";
-//app.activeDocument.changeGrep();
+// fixa mellanslaget efter ortnamnet - TILLSATT 19.9.2022, ÄNDRAT 20.9.2022
+app.findGrepPreferences.findWhat = " \\\x{002E} ";
+app.changeGrepPreferences.changeTo = "\\\x{002E} ";
+app.activeDocument.changeGrep();
 
 // fixa dubbla rader på citatrutorna
 //app.findGrepPreferences.findWhat = "\\\x{A}";
