@@ -21,4 +21,10 @@ var filnamn = play_datum;
 
 var play = app.activeDocument.links.itemByName("play_Dummy.jpg").parent;
 var play_pdf = new File(servermapp + foldermapp + filnamn + "-TVRVKO-PLAY-0-0-print.pdf");
-play.place(play_pdf);
+
+try {
+    play.place(play_pdf);
+}
+catch (e) {
+    alert("Filen finns inte! \n\nLadda upp den manuellt i mappen EXTERNT MATERIAL/PRINTEN/tv eller montera den direkt från skrivbordet och bädda in länken.");
+}
