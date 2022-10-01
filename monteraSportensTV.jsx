@@ -112,7 +112,6 @@ function dialogWRadio(dlgName, cancelIt) {
 
             try {
                 tv_helg1_print.place(tv_1_print);
-
             }
             catch (e) {
                 alert("Filen finns inte!")
@@ -125,7 +124,6 @@ function dialogWRadio(dlgName, cancelIt) {
             datumradHelg1.setDate(datumradHelg1.getDate() + 2);
             var day = datumradHelg1.getDay();
             datumradHelg1 = dayNames[day];
-
 
             // ersätt placeholder med datum
             app.findGrepPreferences.findWhat = "TABLA_1";
