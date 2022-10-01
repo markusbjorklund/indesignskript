@@ -136,7 +136,6 @@ function dialogWRadio(dlgName, cancelIt) {
             app.findGrepPreferences.findWhat = "TABLA_2";
             app.changeGrepPreferences.changeTo = datumradHelg1;
             app.activeDocument.changeGrep();
-
         }
 
         // tv-tablåer för 3 dagar
@@ -164,7 +163,7 @@ function dialogWRadio(dlgName, cancelIt) {
 
             var tv_print = app.activeDocument.links.itemByName("sport_Dummy_vardag.jpg").parent;
             var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRSPT-SPT-0-0-print" + ".pdf");
-            
+
             try {
                 tv_print.place(tv_0_print);
             }
@@ -174,17 +173,17 @@ function dialogWRadio(dlgName, cancelIt) {
 
             var tv_helg1_print = app.activeDocument.links.itemByName("sport_Dummy_helg1.jpg").parent;
             var tv_1_print = new File(servermapp + foldermapp + filnamn1 + "-TVRSPT-SPT-0-0-print" + ".pdf");
-            
+
             try {
                 tv_helg1_print.place(tv_1_print);
             }
             catch (e) {
                 alert("Filen finns inte!")
             }
-        
+
             var tv_helg2_print = app.activeDocument.links.itemByName("sport_Dummy_helg2.jpg").parent;
             var tv_2_print = new File(servermapp + foldermapp + filnamn2 + "-TVRSPT-SPT-0-0-print" + ".pdf");
-            
+
             try {
                 tv_helg2_print.place(tv_2_print);
             }
