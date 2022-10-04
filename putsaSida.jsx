@@ -36,6 +36,15 @@ app.findGrepPreferences.findWhat = "\\\x{A}              \\\x{D}";
 app.changeGrepPreferences.changeTo = "";
 app.activeDocument.changeGrep();
 
+// fixa onödigt radbyte på tidningsbylinen
+app.findGrepPreferences.findWhat = "\\\x{A} VBL";
+app.changeGrepPreferences.changeTo = " VBL";
+app.activeDocument.changeGrep();
+
+app.findGrepPreferences.findWhat = "\\\x{A} VBL";
+app.changeGrepPreferences.changeTo = " VBL";
+app.activeDocument.changeGrep();
+
 // töm sök och ersätt 
 //app.findGrepPreferences = NothingEnum.nothing;
 //app.changeGrepPreferences = NothingEnum.nothing;
