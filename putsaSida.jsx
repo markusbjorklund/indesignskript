@@ -28,21 +28,25 @@ app.changeGrepPreferences.changeTo = "\\\x{002E} ";
 app.activeDocument.changeGrep();
 
 // fixa dubbla rader på citatrutorna
-//app.findGrepPreferences.findWhat = "\\\x{A}";
-//app.changeGrepPreferences.changeTo = "";
-//app.activeDocument.changeGrep();
-
 app.findGrepPreferences.findWhat = "\\\x{A}              \\\x{D}";
 app.changeGrepPreferences.changeTo = "";
 app.activeDocument.changeGrep();
 
-// fixa onödigt radbyte på tidningsbylinen
-app.findGrepPreferences.findWhat = "\\\x{A} VBL";
+// fixa onödigt radbyte på tidningsbylinen – TILLSATT 4.10.2022
+app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}Vbl";
 app.changeGrepPreferences.changeTo = " VBL";
 app.activeDocument.changeGrep();
 
-app.findGrepPreferences.findWhat = "\\\x{A} VBL";
+app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}VBL";
 app.changeGrepPreferences.changeTo = " VBL";
+app.activeDocument.changeGrep();
+
+app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}Öt";
+app.changeGrepPreferences.changeTo = " ÖT";
+app.activeDocument.changeGrep();
+
+app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}ÖT";
+app.changeGrepPreferences.changeTo = " ÖT";
 app.activeDocument.changeGrep();
 
 // töm sök och ersätt 
