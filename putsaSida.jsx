@@ -78,6 +78,10 @@ app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
 app.changeGrepPreferences.changeTo = "Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
 app.activeDocument.changeGrep();
 
+// töm sök och ersätt
+app.findGrepPreferences = NothingEnum.nothing;
+app.changeGrepPreferences = NothingEnum.nothing;
+
 // ändra mejladresser för vasabladet
 if(sidnamn.match("VB-") || sidnamn.match("VBA")) {
     app.findGrepPreferences.findWhat = "@ot.fi";
