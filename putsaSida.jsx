@@ -8,9 +8,12 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+// variabel för filnamnet på dokumentet (används  för automejl och sidlappar)
+var sidnamn = app.activeDocument.name;
+
 // töm sök och ersätt innan skriptet kör
-//app.findGrepPreferences = NothingEnum.nothing;
-//app.changeGrepPreferences = NothingEnum.nothing;
+app.findGrepPreferences = NothingEnum.nothing;
+app.changeGrepPreferences = NothingEnum.nothing;
 
 // fixa till korrekt blanksteg efter pratminus
 app.findGrepPreferences.findWhat = "– ";
@@ -49,12 +52,21 @@ app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}ÖT";
 app.changeGrepPreferences.changeTo = " ÖT";
 app.activeDocument.changeGrep();
 
-// töm sök och ersätt 
-//app.findGrepPreferences = NothingEnum.nothing;
-//app.changeGrepPreferences = NothingEnum.nothing;
+// flagga webbelement som finns inbakade i texten som kommer från managern
+app.findGrepPreferences.findWhat = "Läs också:";
+app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+app.changeGrepPreferences.changeTo = "Artikeln har länkade artiklar på webbben. Infoga dessa som hyperlänkar i en webbhänvisning eller ta bort följande stycke.\\\x{D}";
+app.activeDocument.changeGrep();
 
-// stringa filnamnet på dokumentet
-var sidnamn = app.activeDocument.name;
+app.findGrepPreferences.findWhat = "LÄS OCKSÅ:";
+app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+app.changeGrepPreferences.changeTo = "Artikeln har länkade artiklar på webbben. Infoga dessa som hyperlänkar i en webbhänvisning eller ta bort följande stycke.\\\x{D}";
+app.activeDocument.changeGrep();
+
+app.findGrepPreferences.findWhat = "Artikeln uppdaterad";
+app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+app.changeGrepPreferences.changeTo = "Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+app.activeDocument.changeGrep();
 
 // ändra mejladresser för vasabladet
 if(sidnamn.match("VB-") || sidnamn.match("VBA")) {
