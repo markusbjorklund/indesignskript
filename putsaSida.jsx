@@ -55,12 +55,12 @@ app.activeDocument.changeGrep();
 // flagga webbelement som finns inbakade i texten som kommer från managern
 app.findGrepPreferences.findWhat = "Läs också:";
 app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
-app.changeGrepPreferences.changeTo = "Artikeln har länkade artiklar på webbben. Infoga dessa som hyperlänkar i en webbhänvisning eller ta bort följande stycke.\\\x{D}";
+app.changeGrepPreferences.changeTo = "Artikeln har länkade artiklar på webben.\\\x{D}";
 app.activeDocument.changeGrep();
 
 app.findGrepPreferences.findWhat = "LÄS OCKSÅ:";
 app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
-app.changeGrepPreferences.changeTo = "Artikeln har länkade artiklar på webbben. Infoga dessa som hyperlänkar i en webbhänvisning eller ta bort följande stycke.\\\x{D}";
+app.changeGrepPreferences.changeTo = "Artikeln har länkade artiklar på webben.\\\x{D}";
 app.activeDocument.changeGrep();
 
 app.findGrepPreferences.findWhat = "Artikeln uppdaterad";
