@@ -25,7 +25,7 @@ app.findGrepPreferences.findWhat = " –\\\x{2009}";
 app.changeGrepPreferences.changeTo = " – ";
 app.activeDocument.changeGrep();
 
-// fixa mellanslaget efter ortnamnet - TILLSATT 19.9.2022, ÄNDRAT 20.9.2022
+// fixa mellanslaget efter ortnamnet - används i nya NP
 app.findGrepPreferences.findWhat = " \\\x{002E} ";
 app.changeGrepPreferences.changeTo = "\\\x{002E} ";
 app.activeDocument.changeGrep();
@@ -35,7 +35,7 @@ app.findGrepPreferences.findWhat = "\\\x{A}              \\\x{D}";
 app.changeGrepPreferences.changeTo = "";
 app.activeDocument.changeGrep();
 
-// fixa onödigt radbyte på tidningsbylinen – TILLSATT 4.10.2022
+// fixa onödigt radbyte på tidningsbylinen – åtgärdar bugg som finns i nya NP
 app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}Vbl";
 app.changeGrepPreferences.changeTo = " VBL";
 app.activeDocument.changeGrep();
@@ -52,7 +52,7 @@ app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}ÖT";
 app.changeGrepPreferences.changeTo = " ÖT";
 app.activeDocument.changeGrep();
 
-// flagga webbelement som finns inbakade i texten som kommer från managern
+// rödflagga webbspecifika element i artikeln som kommer från managern
 app.findGrepPreferences.findWhat = "Läs också:";
 app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
 app.changeGrepPreferences.changeTo = "Artikeln har länkade artiklar på webben.\\\x{D}";
