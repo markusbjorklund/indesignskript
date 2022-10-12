@@ -68,6 +68,16 @@ app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
 app.changeGrepPreferences.changeTo = "Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
 app.activeDocument.changeGrep();
 
+app.findGrepPreferences.findWhat = "Artikeln är uppdaterad";
+app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+app.changeGrepPreferences.changeTo = "Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+app.activeDocument.changeGrep();
+
+app.findGrepPreferences.findWhat = "Uppdaterad klockan";
+app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+app.changeGrepPreferences.changeTo = "Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+app.activeDocument.changeGrep();
+
 // ändra mejladresser för vasabladet
 if(sidnamn.match("VB-") || sidnamn.match("VBA")) {
     app.findGrepPreferences.findWhat = "@ot.fi";
