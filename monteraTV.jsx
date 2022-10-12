@@ -47,7 +47,7 @@ function dialogWRadio(dlgName, cancelIt) {
         // håll koll på om båda pdf:erna ska monteras
         var antalSidor = app.activeDocument.pages.length;
 
-        // tv-tablåer för i dag
+        // tv-tablåer för morgondagen
         if (radioValue == 0) {
             dagens_tv.setDate(dagens_tv.getDate() + 1);
             var day = ("0" + dagens_tv.getDate()).slice(-2);
@@ -96,7 +96,7 @@ function dialogWRadio(dlgName, cancelIt) {
             app.changeGrepPreferences = NothingEnum.nothing;
         }
 
-        // tv-tablåer för i morgon
+        // tv-tablåer för söndag
         else if (radioValue == 1) {
             dagens_tv.setDate(dagens_tv.getDate() + 2);
             var day = ("0" + dagens_tv.getDate()).slice(-2);
@@ -145,7 +145,7 @@ function dialogWRadio(dlgName, cancelIt) {
             app.changeGrepPreferences = NothingEnum.nothing;
         }
 
-        // tv-tablåer för i övermorgon
+        // tv-tablåer för måndag
         else if (radioValue == 2) {
             dagens_tv.setDate(dagens_tv.getDate() + 3);
             var day = ("0" + dagens_tv.getDate()).slice(-2);
@@ -194,7 +194,7 @@ function dialogWRadio(dlgName, cancelIt) {
             app.changeGrepPreferences = NothingEnum.nothing;
         }
 
-        // tv-tablåer för Sydins fjärde tv-tablå på måndagar
+        // tv-tablåer för tisdagar
         else if (radioValue == 3) {
             dagens_tv.setDate(dagens_tv.getDate() + 4);
             var day = ("0" + dagens_tv.getDate()).slice(-2);
@@ -203,9 +203,20 @@ function dialogWRadio(dlgName, cancelIt) {
             dagens_tv = year + month + day;
             var filnamn = dagens_tv;
 
-            var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-            var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
-            tv_print.place(tv_0_print);
+            if (antalSidor > 1) {
+                var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
+                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                tv_print.place(tv_0_print);
+                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
+                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                tv_h_print.place(tv_1_print);
+            }
+
+            else if (app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").isValid) {
+                var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
+                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                tv_print.place(tv_0_print);
+            }
 
             datumrad.setDate(datumrad.getDate() + 4);
             var day = datumrad.getDay();
