@@ -55,27 +55,27 @@ app.activeDocument.changeGrep();
 // rödflagga webbspecifika element i artikeln som kommer från managern
 app.findGrepPreferences.findWhat = "Läs också:";
 app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
-app.changeGrepPreferences.changeTo = "Artikeln har länkade artiklar på webben.\\\x{D}";
+app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har länkade artiklar på webben.\\\x{D}";
 app.activeDocument.changeGrep();
 
 app.findGrepPreferences.findWhat = "LÄS OCKSÅ:";
 app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
-app.changeGrepPreferences.changeTo = "Artikeln har länkade artiklar på webben.\\\x{D}";
+app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har länkade artiklar på webben.\\\x{D}";
 app.activeDocument.changeGrep();
 
 app.findGrepPreferences.findWhat = "Artikeln uppdaterad";
 app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
-app.changeGrepPreferences.changeTo = "Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
 app.activeDocument.changeGrep();
 
 app.findGrepPreferences.findWhat = "Artikeln är uppdaterad";
 app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
-app.changeGrepPreferences.changeTo = "Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
 app.activeDocument.changeGrep();
 
 app.findGrepPreferences.findWhat = "Uppdaterad klockan";
 app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
-app.changeGrepPreferences.changeTo = "Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
 app.activeDocument.changeGrep();
 
 // töm sök och ersätt
