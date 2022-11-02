@@ -25,9 +25,9 @@ app.findGrepPreferences.findWhat = " –\\\x{2009}";
 app.changeGrepPreferences.changeTo = " – ";
 app.activeDocument.changeGrep();
 
-// fixa mellanslaget efter ortnamnet - används i nya NP
+// fixa mellanslaget efter Ortnamn i text - används i nya NP
 app.findGrepPreferences.findWhat = " \\\x{002E} ";
-app.changeGrepPreferences.changeTo = "\\\x{002E} ";
+app.changeGrepPreferences.changeTo = "\\\x{002E}";
 app.activeDocument.changeGrep();
 
 // fixa dubbla rader på citatrutorna
