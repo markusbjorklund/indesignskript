@@ -18,7 +18,7 @@ function dialogWRadio(dlgName, cancelIt) {
     //sätt till radioknappar
     var rGroup = dlgRow.radiobuttonGroups.add();
 
-    rGroup.radiobuttonControls.add({ staticLabel: "Vardag", checkedState: true });
+    rGroup.radiobuttonControls.add({ staticLabel: "I morgon", checkedState: true });
     rGroup.radiobuttonControls.add({ staticLabel: "2 dagar" });
     rGroup.radiobuttonControls.add({ staticLabel: "3 dagar" });
 

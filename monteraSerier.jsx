@@ -20,9 +20,9 @@ function dialogWRadio(dlgName, cancelIt) {
     //sätt till radioknappar
     var rGroup = dlgRow.radiobuttonGroups.add();
 
-    rGroup.radiobuttonControls.add({ staticLabel: "Morgondagens serier", checkedState: true });
-    rGroup.radiobuttonControls.add({ staticLabel: "Söndagens serier" });
-    rGroup.radiobuttonControls.add({ staticLabel: "Måndagens serier" });
+    rGroup.radiobuttonControls.add({ staticLabel: "I morgon", checkedState: true });
+    rGroup.radiobuttonControls.add({ staticLabel: "Söndag" });
+    rGroup.radiobuttonControls.add({ staticLabel: "Måndag" });
 
     // sidinformation
     var sidnamn = app.activeDocument.name;

@@ -20,10 +20,10 @@ function dialogWRadio(dlgName, cancelIt) {
     //sätt till radioknappar
     var rGroup = dlgRow.radiobuttonGroups.add();
 
-    rGroup.radiobuttonControls.add({ staticLabel: "Morgondagens tablå", checkedState: true });
-    rGroup.radiobuttonControls.add({ staticLabel: "Söndagens tablå" });
-    rGroup.radiobuttonControls.add({ staticLabel: "Måndagens tablå" });
-    rGroup.radiobuttonControls.add({ staticLabel: "Tisdagens tablå" });
+    rGroup.radiobuttonControls.add({ staticLabel: "I morgon", checkedState: true });
+    rGroup.radiobuttonControls.add({ staticLabel: "Söndag" });
+    rGroup.radiobuttonControls.add({ staticLabel: "Måndag" });
+    rGroup.radiobuttonControls.add({ staticLabel: "Tisdag" });
 
     // filmappning
     var servermapp = "//serveradressen kommer hit/";
