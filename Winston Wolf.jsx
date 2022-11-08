@@ -31,7 +31,7 @@
 Winston Wolf, also known as "The Wolf", is a supporting character in Quentin Tarantino's second film, Pulp Fiction.
 He is a cleaner working for Marsellus Wallace and was portrayed by Harvey Keitel.
 
-Call The Wolf by pressing F12.
+Call "The Wolf" by pressing F12.
 
 script author Markus Bjorklund
 */
