@@ -25,8 +25,8 @@ function dialogWRadio(dlgName, cancelIt) {
     rGroup.radiobuttonControls.add({ staticLabel: "Play (Fredag)" });
 
     // filmappning
-    var servermapp = "//serveradressen kommer hit/";
-    var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/tv/";
+    var serveradress = "//serveradressen hit/";
+    var filmapp = "Diverse/EXTERNT MATERIAL/PRINTEN/tv/";
 
     if (dlgRef.show() == true) {
         var radioValue = rGroup.selectedButton;
@@ -57,22 +57,22 @@ function dialogWRadio(dlgName, cancelIt) {
 
             if (antalSidor > 1) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
                 var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
                 tv_h_print.place(tv_1_print);
             }
 
             else if (app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").isValid) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
             }
 
             else if (app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").isValid) {
                 var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
                 tv_h_print.place(tv_1_print);
             }
 
@@ -106,22 +106,22 @@ function dialogWRadio(dlgName, cancelIt) {
 
             if (antalSidor > 1) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
                 var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
                 tv_h_print.place(tv_1_print);
             }
 
             else if (app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").isValid) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
             }
 
             else if (app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").isValid) {
                 var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
                 tv_h_print.place(tv_1_print);
             }
 
@@ -155,22 +155,22 @@ function dialogWRadio(dlgName, cancelIt) {
 
             if (antalSidor > 1) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
                 var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
                 tv_h_print.place(tv_1_print);
             }
 
             else if (app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").isValid) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
             }
 
             else if (app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").isValid) {
                 var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
                 tv_h_print.place(tv_1_print);
             }
 
@@ -204,16 +204,16 @@ function dialogWRadio(dlgName, cancelIt) {
 
             if (antalSidor > 1) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
                 var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
+                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
                 tv_h_print.place(tv_1_print);
             }
 
             else if (app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").isValid) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
-                var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
+                var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
             }
 
@@ -236,7 +236,7 @@ function dialogWRadio(dlgName, cancelIt) {
             app.changeGrepPreferences = NothingEnum.nothing;
         }
         // tv-tablå för Play
-        else if (radioValue == 4) {
+        else if (radioValue == 4 && app.documents[0].pageItems.itemByName("play").isValid) {
             dagens_tv.setDate(dagens_tv.getDate() + 1);
             var day = ("0" + dagens_tv.getDate()).slice(-2);
             var month = ("0" + (dagens_tv.getMonth() + 1)).slice(-2);
@@ -245,7 +245,7 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_tv;
 
             var play = app.activeDocument.links.itemByName("play_Dummy.jpg").parent;
-            var play_pdf = new File(servermapp + foldermapp + filnamn + "-TVRVKO-PLAY-0-0-print.pdf");
+            var play_pdf = new File(serveradress + filmapp + filnamn + "-TVRVKO-PLAY-0-0-print.pdf");
 
             try {
                 play.place(play_pdf);
@@ -253,6 +253,9 @@ function dialogWRadio(dlgName, cancelIt) {
             catch (e) {
                 alert("Play-tablån har inte kommit ännu eller så är det problem med FTP-överföringen. Prova igen om en stund eller montera manuellt.");
             }
+        }
+        else {
+            alert("Det finns inga giltiga objekt för automatisk montering.");
         }
     }
 }
