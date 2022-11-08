@@ -37,7 +37,7 @@ script author Markus Bjorklund
 */
 
 try {
-  // variabel för filnamnet på dokumentet (används  för automejl och sidlappar)
+  // variabel för filnamnet på dokumentet – används för automejl(vbl, öt, sydin och bilagor) och sidlappar (vbl och öt)
   var sidnamn = app.activeDocument.name;
 
   // töm sök och ersätt innan skriptet kör
