@@ -2,8 +2,6 @@
 // 
 // skript för att automatiskt montera TV-tablåerna på printsidor
 //
-// möjligt att välja i dag, i morgon, i övermorgon eller i överövermorgon(Sydin)
-//
 // author Markus Björklund
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -24,6 +22,7 @@ function dialogWRadio(dlgName, cancelIt) {
     rGroup.radiobuttonControls.add({ staticLabel: "Söndag" });
     rGroup.radiobuttonControls.add({ staticLabel: "Måndag" });
     rGroup.radiobuttonControls.add({ staticLabel: "Tisdag" });
+    rGroup.radiobuttonControls.add({ staticLabel: "Play (Fredag)" });
 
     // filmappning
     var servermapp = "//serveradressen kommer hit/";
@@ -235,6 +234,25 @@ function dialogWRadio(dlgName, cancelIt) {
             // töm sök och ersätt innan skriptet avslutas
             app.findGrepPreferences = NothingEnum.nothing;
             app.changeGrepPreferences = NothingEnum.nothing;
+        }
+        // tv-tablå för Play
+        else if (radioValue == 4) {
+            dagens_tv.setDate(dagens_tv.getDate() + 1);
+            var day = ("0" + dagens_tv.getDate()).slice(-2);
+            var month = ("0" + (dagens_tv.getMonth() + 1)).slice(-2);
+            var year = ("" + (dagens_tv.getFullYear() + 0)).slice(-2);
+            dagens_tv = year + month + day;
+            var filnamn = dagens_tv;
+
+            var play = app.activeDocument.links.itemByName("play_Dummy.jpg").parent;
+            var play_pdf = new File(servermapp + foldermapp + filnamn + "-TVRVKO-PLAY-0-0-print.pdf");
+
+            try {
+                play.place(play_pdf);
+            }
+            catch (e) {
+                alert("Play-tablån har inte kommit ännu eller så är det problem med FTP-överföringen. Prova igen om en stund eller montera manuellt.");
+            }
         }
     }
 }
