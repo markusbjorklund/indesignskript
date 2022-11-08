@@ -26,8 +26,8 @@ function dialogWRadio(dlgName, cancelIt) {
     var sidnamn = app.activeDocument.name;
     
     // filmappning
-    var servermapp = "//serveradressen kommer hit/";
-    var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/serier/";
+    var serveradress = "//serveradressen kommer hit/";
+    var filmapp = "Diverse/EXTERNT MATERIAL/PRINTEN/serier/";
 
     if (dlgRef.show() == true) {
         var radioValue = rGroup.selectedButton;
@@ -45,27 +45,27 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_serie;
 
             var ankeborg = app.activeDocument.links.itemByName("ANK_Dummy.pdf.jpg").parent;
-            var ankeborg_strip = new File(servermapp + foldermapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
+            var ankeborg_strip = new File(serveradress + filmapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
             ankeborg.place(ankeborg_strip);
 
             var hagbard = app.activeDocument.links.itemByName("HAG_Dummy.pdf.jpg").parent;
-            var hagbard_strip = new File(servermapp + foldermapp + "vbl/hagbard/HAG_" + filnamn + ".tif");
+            var hagbard_strip = new File(serveradress + filmapp + "vbl/hagbard/HAG_" + filnamn + ".tif");
             hagbard.place(hagbard_strip);
         
             var helge = app.activeDocument.links.itemByName("HEVBL_Dummy.tif.jpg").parent;
-            var helge_strip = new File(servermapp + foldermapp + "vbl/helge/HEVBL_" + filnamn + ".tif");
+            var helge_strip = new File(serveradress + filmapp + "vbl/helge/HEVBL_" + filnamn + ".tif");
             helge.place(helge_strip);
         
             var morrgan = app.activeDocument.links.itemByName("MUT_Dummy.tif.jpg").parent;
-            var morrgan_strip = new File(servermapp + foldermapp + "vbl/mutts/MUT_" + filnamn + ".pdf");
+            var morrgan_strip = new File(serveradress + filmapp + "vbl/mutts/MUT_" + filnamn + ".pdf");
             morrgan.place(morrgan_strip);
         
             var nemi = app.activeDocument.links.itemByName("NM_Dummy.tif.jpg").parent;
-            var nemi_strip = new File(servermapp + foldermapp + "vbl/nemi/NM_" + filnamn + ".tif");
+            var nemi_strip = new File(serveradress + filmapp + "vbl/nemi/NM_" + filnamn + ".tif");
             nemi.place(nemi_strip);
             
             var zits = app.activeDocument.links.itemByName("ZIVBL_Dummy.tif.jpg").parent;
-            var zits_strip = new File(servermapp + foldermapp + "vbl/zits/ZIVBL_" + filnamn + ".pdf");
+            var zits_strip = new File(serveradress + filmapp + "vbl/zits/ZIVBL_" + filnamn + ".pdf");
             zits.place(zits_strip);
         }
 
@@ -79,27 +79,27 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_serie;
 
             var ankeborg = app.activeDocument.links.itemByName("ANK_Dummy.pdf.jpg").parent;
-            var ankeborg_strip = new File(servermapp + foldermapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
+            var ankeborg_strip = new File(serveradress + filmapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
             ankeborg.place(ankeborg_strip);
 
             var dragos = app.activeDocument.links.itemByName("DRA_Dummy.pdf.jpg").parent;
-            var dragos_strip = new File(servermapp + foldermapp + "ot/dragos/DRA_" + filnamn + ".pdf");
+            var dragos_strip = new File(serveradress + filmapp + "ot/dragos/DRA_" + filnamn + ".pdf");
             dragos.place(dragos_strip);
         
             var helge = app.activeDocument.links.itemByName("HÄL_Dummy.tif.jpg").parent;
-            var helge_strip = new File(servermapp + foldermapp + "ot/helge/HÄL_" + filnamn + ".tif");
+            var helge_strip = new File(serveradress + filmapp + "ot/helge/HÄL_" + filnamn + ".tif");
             helge.place(helge_strip);
         
             var medel = app.activeDocument.links.itemByName("MED_Dummy.tif.jpg").parent;
-            var medel_strip = new File(servermapp + foldermapp + "ot/medel/MED_" + filnamn + ".tif");
+            var medel_strip = new File(serveradress + filmapp + "ot/medel/MED_" + filnamn + ".tif");
             medel.place(medel_strip);
             
             var nemi = app.activeDocument.links.itemByName("NEMOT_Dummy.tif.jpg").parent;
-            var nemi_strip = new File(servermapp + foldermapp + "ot/nemi/NEMOT_" + filnamn + ".tif");
+            var nemi_strip = new File(serveradress + filmapp + "ot/nemi/NEMOT_" + filnamn + ".tif");
             nemi.place(nemi_strip);
         
             var zits = app.activeDocument.links.itemByName("ZIT_Dummy.pdf.jpg").parent;
-            var zits_strip = new File(servermapp + foldermapp + "ot/zits/ZIT_" + filnamn + ".pdf");
+            var zits_strip = new File(serveradress + filmapp + "ot/zits/ZIT_" + filnamn + ".pdf");
             zits.place(zits_strip);
         }
 
@@ -113,15 +113,15 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_serie;
 
             var zits = app.activeDocument.links.itemByName("ZTSyd_Dummy.TIF.jpg").parent;
-            var zits_strip = new File(servermapp + foldermapp + "sydin/zits/ZTSyd_" + filnamn + ".tif");
+            var zits_strip = new File(serveradress + filmapp + "sydin/zits/ZTSyd_" + filnamn + ".tif");
             zits.place(zits_strip);
 
             var helge = app.activeDocument.links.itemByName("HESY_Dummy.tif.jpg").parent;
-            var helge_strip = new File(servermapp + foldermapp + "sydin/helge/HESY_" + filnamn + ".tif");
+            var helge_strip = new File(serveradress + filmapp + "sydin/helge/HESY_" + filnamn + ".tif");
             helge.place(helge_strip);
 
             var medel = app.activeDocument.links.itemByName("MEDSY_Dummy.tif.jpg").parent;
-            var medel_strip = new File(servermapp + foldermapp + "sydin/medel/MEDSY_" + filnamn + ".tif");
+            var medel_strip = new File(serveradress + filmapp + "sydin/medel/MEDSY_" + filnamn + ".tif");
             medel.place(medel_strip);
         }
 
@@ -135,27 +135,27 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_serie;
 
             var ankeborg = app.activeDocument.links.itemByName("ANK_Dummy.pdf.jpg").parent;
-            var ankeborg_strip = new File(servermapp + foldermapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
+            var ankeborg_strip = new File(serveradress + filmapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
             ankeborg.place(ankeborg_strip);
 
             var hagbard = app.activeDocument.links.itemByName("HAG_Dummy.pdf.jpg").parent;
-            var hagbard_strip = new File(servermapp + foldermapp + "vbl/hagbard/HAG_" + filnamn + ".tif");
+            var hagbard_strip = new File(serveradress + filmapp + "vbl/hagbard/HAG_" + filnamn + ".tif");
             hagbard.place(hagbard_strip);
         
             var helge = app.activeDocument.links.itemByName("HEVBL_Dummy.tif.jpg").parent;
-            var helge_strip = new File(servermapp + foldermapp + "vbl/helge/HEVBL_" + filnamn + ".tif");
+            var helge_strip = new File(serveradress + filmapp + "vbl/helge/HEVBL_" + filnamn + ".tif");
             helge.place(helge_strip);
         
             var morrgan = app.activeDocument.links.itemByName("MUT_Dummy.tif.jpg").parent;
-            var morrgan_strip = new File(servermapp + foldermapp + "vbl/mutts/MUT_" + filnamn + ".pdf");
+            var morrgan_strip = new File(serveradress + filmapp + "vbl/mutts/MUT_" + filnamn + ".pdf");
             morrgan.place(morrgan_strip);
         
             var nemi = app.activeDocument.links.itemByName("NM_Dummy.tif.jpg").parent;
-            var nemi_strip = new File(servermapp + foldermapp + "vbl/nemi/NM_" + filnamn + ".tif");
+            var nemi_strip = new File(serveradress + filmapp + "vbl/nemi/NM_" + filnamn + ".tif");
             nemi.place(nemi_strip);
             
             var zits = app.activeDocument.links.itemByName("ZIVBL_Dummy.tif.jpg").parent;
-            var zits_strip = new File(servermapp + foldermapp + "vbl/zits/ZIVBL_" + filnamn + ".pdf");
+            var zits_strip = new File(serveradress + filmapp + "vbl/zits/ZIVBL_" + filnamn + ".pdf");
             zits.place(zits_strip);
         }
 
@@ -169,27 +169,27 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_serie;
 
             var ankeborg = app.activeDocument.links.itemByName("ANK_Dummy.pdf.jpg").parent;
-            var ankeborg_strip = new File(servermapp + foldermapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
+            var ankeborg_strip = new File(serveradress + filmapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
             ankeborg.place(ankeborg_strip);
 
             var dragos = app.activeDocument.links.itemByName("DRA_Dummy.pdf.jpg").parent;
-            var dragos_strip = new File(servermapp + foldermapp + "ot/dragos/DRA_" + filnamn + ".pdf");
+            var dragos_strip = new File(serveradress + filmapp + "ot/dragos/DRA_" + filnamn + ".pdf");
             dragos.place(dragos_strip);
         
             var helge = app.activeDocument.links.itemByName("HÄL_Dummy.tif.jpg").parent;
-            var helge_strip = new File(servermapp + foldermapp + "ot/helge/HÄL_" + filnamn + ".tif");
+            var helge_strip = new File(serveradress + filmapp + "ot/helge/HÄL_" + filnamn + ".tif");
             helge.place(helge_strip);
         
             var medel = app.activeDocument.links.itemByName("MED_Dummy.tif.jpg").parent;
-            var medel_strip = new File(servermapp + foldermapp + "ot/medel/MED_" + filnamn + ".tif");
+            var medel_strip = new File(serveradress + filmapp + "ot/medel/MED_" + filnamn + ".tif");
             medel.place(medel_strip);
             
             var nemi = app.activeDocument.links.itemByName("NEMOT_Dummy.tif.jpg").parent;
-            var nemi_strip = new File(servermapp + foldermapp + "ot/nemi/NEMOT_" + filnamn + ".tif");
+            var nemi_strip = new File(serveradress + filmapp + "ot/nemi/NEMOT_" + filnamn + ".tif");
             nemi.place(nemi_strip);
         
             var zits = app.activeDocument.links.itemByName("ZIT_Dummy.pdf.jpg").parent;
-            var zits_strip = new File(servermapp + foldermapp + "ot/zits/ZIT_" + filnamn + ".pdf");
+            var zits_strip = new File(serveradress + filmapp + "ot/zits/ZIT_" + filnamn + ".pdf");
             zits.place(zits_strip);
         }
 
@@ -203,15 +203,15 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_serie;
 
             var zits = app.activeDocument.links.itemByName("ZTSyd_Dummy.TIF.jpg").parent;
-            var zits_strip = new File(servermapp + foldermapp + "sydin/zits/ZTSyd_" + filnamn + ".tif");
+            var zits_strip = new File(serveradress + filmapp + "sydin/zits/ZTSyd_" + filnamn + ".tif");
             zits.place(zits_strip);
 
             var helge = app.activeDocument.links.itemByName("HESY_Dummy.tif.jpg").parent;
-            var helge_strip = new File(servermapp + foldermapp + "sydin/helge/HESY_" + filnamn + ".tif");
+            var helge_strip = new File(serveradress + filmapp + "sydin/helge/HESY_" + filnamn + ".tif");
             helge.place(helge_strip);
 
             var medel = app.activeDocument.links.itemByName("MEDSY_Dummy.tif.jpg").parent;
-            var medel_strip = new File(servermapp + foldermapp + "sydin/medel/MEDSY_" + filnamn + ".tif");
+            var medel_strip = new File(serveradress + filmapp + "sydin/medel/MEDSY_" + filnamn + ".tif");
             medel.place(medel_strip);
         }
 
@@ -225,27 +225,27 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_serie;
 
             var ankeborg = app.activeDocument.links.itemByName("ANK_Dummy.pdf.jpg").parent;
-            var ankeborg_strip = new File(servermapp + foldermapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
+            var ankeborg_strip = new File(serveradress + filmapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
             ankeborg.place(ankeborg_strip);
 
             var hagbard = app.activeDocument.links.itemByName("HAG_Dummy.pdf.jpg").parent;
-            var hagbard_strip = new File(servermapp + foldermapp + "vbl/hagbard/HAG_" + filnamn + ".tif");
+            var hagbard_strip = new File(serveradress + filmapp + "vbl/hagbard/HAG_" + filnamn + ".tif");
             hagbard.place(hagbard_strip);
         
             var helge = app.activeDocument.links.itemByName("HEVBL_Dummy.tif.jpg").parent;
-            var helge_strip = new File(servermapp + foldermapp + "vbl/helge/HEVBL_" + filnamn + ".tif");
+            var helge_strip = new File(serveradress + filmapp + "vbl/helge/HEVBL_" + filnamn + ".tif");
             helge.place(helge_strip);
         
             var morrgan = app.activeDocument.links.itemByName("MUT_Dummy.tif.jpg").parent;
-            var morrgan_strip = new File(servermapp + foldermapp + "vbl/mutts/MUT_" + filnamn + ".pdf");
+            var morrgan_strip = new File(serveradress + filmapp + "vbl/mutts/MUT_" + filnamn + ".pdf");
             morrgan.place(morrgan_strip);
         
             var nemi = app.activeDocument.links.itemByName("NM_Dummy.tif.jpg").parent;
-            var nemi_strip = new File(servermapp + foldermapp + "vbl/nemi/NM_" + filnamn + ".tif");
+            var nemi_strip = new File(serveradress + filmapp + "vbl/nemi/NM_" + filnamn + ".tif");
             nemi.place(nemi_strip);
             
             var zits = app.activeDocument.links.itemByName("ZIVBL_Dummy.tif.jpg").parent;
-            var zits_strip = new File(servermapp + foldermapp + "vbl/zits/ZIVBL_" + filnamn + ".pdf");
+            var zits_strip = new File(serveradress + filmapp + "vbl/zits/ZIVBL_" + filnamn + ".pdf");
             zits.place(zits_strip);
         }
 
@@ -259,27 +259,27 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_serie;
 
             var ankeborg = app.activeDocument.links.itemByName("ANK_Dummy.pdf.jpg").parent;
-            var ankeborg_strip = new File(servermapp + foldermapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
+            var ankeborg_strip = new File(serveradress + filmapp + "ot/ankeborg/ANK_" + filnamn + ".pdf"); // samma i både vbl och öt kronologiskt
             ankeborg.place(ankeborg_strip);
 
             var dragos = app.activeDocument.links.itemByName("DRA_Dummy.pdf.jpg").parent;
-            var dragos_strip = new File(servermapp + foldermapp + "ot/dragos/DRA_" + filnamn + ".pdf");
+            var dragos_strip = new File(serveradress + filmapp + "ot/dragos/DRA_" + filnamn + ".pdf");
             dragos.place(dragos_strip);
         
             var helge = app.activeDocument.links.itemByName("HÄL_Dummy.tif.jpg").parent;
-            var helge_strip = new File(servermapp + foldermapp + "ot/helge/HÄL_" + filnamn + ".tif");
+            var helge_strip = new File(serveradress + filmapp + "ot/helge/HÄL_" + filnamn + ".tif");
             helge.place(helge_strip);
         
             var medel = app.activeDocument.links.itemByName("MED_Dummy.tif.jpg").parent;
-            var medel_strip = new File(servermapp + foldermapp + "ot/medel/MED_" + filnamn + ".tif");
+            var medel_strip = new File(serveradress + filmapp + "ot/medel/MED_" + filnamn + ".tif");
             medel.place(medel_strip);
             
             var nemi = app.activeDocument.links.itemByName("NEMOT_Dummy.tif.jpg").parent;
-            var nemi_strip = new File(servermapp + foldermapp + "ot/nemi/NEMOT_" + filnamn + ".tif");
+            var nemi_strip = new File(serveradress + filmapp + "ot/nemi/NEMOT_" + filnamn + ".tif");
             nemi.place(nemi_strip);
         
             var zits = app.activeDocument.links.itemByName("ZIT_Dummy.pdf.jpg").parent;
-            var zits_strip = new File(servermapp + foldermapp + "ot/zits/ZIT_" + filnamn + ".pdf");
+            var zits_strip = new File(serveradress + filmapp + "ot/zits/ZIT_" + filnamn + ".pdf");
             zits.place(zits_strip);
         }
 
@@ -293,15 +293,15 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_serie;
 
             var zits = app.activeDocument.links.itemByName("ZTSyd_Dummy.TIF.jpg").parent;
-            var zits_strip = new File(servermapp + foldermapp + "sydin/zits/ZTSyd_" + filnamn + ".tif");
+            var zits_strip = new File(serveradress + filmapp + "sydin/zits/ZTSyd_" + filnamn + ".tif");
             zits.place(zits_strip);
 
             var helge = app.activeDocument.links.itemByName("HESY_Dummy.tif.jpg").parent;
-            var helge_strip = new File(servermapp + foldermapp + "sydin/helge/HESY_" + filnamn + ".tif");
+            var helge_strip = new File(serveradress + filmapp + "sydin/helge/HESY_" + filnamn + ".tif");
             helge.place(helge_strip);
 
             var medel = app.activeDocument.links.itemByName("MEDSY_Dummy.tif.jpg").parent;
-            var medel_strip = new File(servermapp + foldermapp + "sydin/medel/MEDSY_" + filnamn + ".tif");
+            var medel_strip = new File(serveradress + filmapp + "sydin/medel/MEDSY_" + filnamn + ".tif");
             medel.place(medel_strip);
         }
     }

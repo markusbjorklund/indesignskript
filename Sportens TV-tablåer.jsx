@@ -23,8 +23,8 @@ function dialogWRadio(dlgName, cancelIt) {
     rGroup.radiobuttonControls.add({ staticLabel: "3 dagar" });
 
     // filmappning
-    var servermapp = "//serveradressen kommer hit/";
-    var foldermapp = "Diverse/EXTERNT MATERIAL/PRINTEN/tv/";
+    var serveradress = "//serveradressen kommer hit/";
+    var filmapp = "Diverse/EXTERNT MATERIAL/PRINTEN/tv/";
 
     if (dlgRef.show() == true) {
         var radioValue = rGroup.selectedButton;
@@ -52,7 +52,7 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_tv;
 
             var tv_print = app.activeDocument.links.itemByName("sport_Dummy_vardag.jpg").parent;
-            var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRSPT-SPT-0-0-print" + ".pdf");
+            var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRSPT-SPT-0-0-print" + ".pdf");
 
             try {
                 tv_print.place(tv_0_print);
@@ -98,7 +98,7 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn1 = helg1_tv;
 
             var tv_print = app.activeDocument.links.itemByName("sport_Dummy_vardag.jpg").parent;
-            var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRSPT-SPT-0-0-print" + ".pdf");
+            var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRSPT-SPT-0-0-print" + ".pdf");
 
             try {
                 tv_print.place(tv_0_print);
@@ -108,7 +108,7 @@ function dialogWRadio(dlgName, cancelIt) {
             }
 
             var tv_helg1_print = app.activeDocument.links.itemByName("sport_Dummy_helg1.jpg").parent;
-            var tv_1_print = new File(servermapp + foldermapp + filnamn1 + "-TVRSPT-SPT-0-0-print" + ".pdf");
+            var tv_1_print = new File(serveradress + filmapp + filnamn1 + "-TVRSPT-SPT-0-0-print" + ".pdf");
 
             try {
                 tv_helg1_print.place(tv_1_print);
@@ -160,7 +160,7 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn2 = helg2_tv;
 
             var tv_print = app.activeDocument.links.itemByName("sport_Dummy_vardag.jpg").parent;
-            var tv_0_print = new File(servermapp + foldermapp + filnamn + "-TVRSPT-SPT-0-0-print" + ".pdf");
+            var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRSPT-SPT-0-0-print" + ".pdf");
 
             try {
                 tv_print.place(tv_0_print);
@@ -170,7 +170,7 @@ function dialogWRadio(dlgName, cancelIt) {
             }
 
             var tv_helg1_print = app.activeDocument.links.itemByName("sport_Dummy_helg1.jpg").parent;
-            var tv_1_print = new File(servermapp + foldermapp + filnamn1 + "-TVRSPT-SPT-0-0-print" + ".pdf");
+            var tv_1_print = new File(serveradress + filmapp + filnamn1 + "-TVRSPT-SPT-0-0-print" + ".pdf");
 
             try {
                 tv_helg1_print.place(tv_1_print);
@@ -180,7 +180,7 @@ function dialogWRadio(dlgName, cancelIt) {
             }
 
             var tv_helg2_print = app.activeDocument.links.itemByName("sport_Dummy_helg2.jpg").parent;
-            var tv_2_print = new File(servermapp + foldermapp + filnamn2 + "-TVRSPT-SPT-0-0-print" + ".pdf");
+            var tv_2_print = new File(serveradress + filmapp + filnamn2 + "-TVRSPT-SPT-0-0-print" + ".pdf");
 
             try {
                 tv_helg2_print.place(tv_2_print);
