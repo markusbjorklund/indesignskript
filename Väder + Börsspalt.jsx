@@ -56,7 +56,7 @@ else if (app.documents[0].pageItems.itemByName("sydinvader").isValid) {
         sydinvader.place(sydinvader_pdf);
     }
     catch (e) {
-        alert("Vädret har inte kommit ännu eller så är det problem med FTP-överföringen. Vänligen prova igen om en stund eller montera manuellt från mejlen.");
+        alert("Vädret har inte kommit ännu eller så är det problem med FTP-överföringen. Vänligen prova igen om en stund eller montera manuellt.");
     }
 }
 
