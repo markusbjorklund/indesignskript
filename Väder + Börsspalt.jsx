@@ -38,7 +38,7 @@ if (app.documents[0].pageItems.itemByName("borsen").isValid) {
 
 else if (app.documents[0].pageItems.itemByName("vader").isValid) {
     var vader = app.activeDocument.links.itemByName("vader_Dummy_.jpg").parent;
-    var vader_pdf = new File(serveradress + filmapp + "vader/" + filnamn + "VasaBladet4.pdf");
+    var vader_pdf = new File(serveradress + filmapp + "vader/" + filnamn + "VasaBladet14.pdf");
 
     try {
         vader.place(vader_pdf);
@@ -50,7 +50,7 @@ else if (app.documents[0].pageItems.itemByName("vader").isValid) {
 
 else if (app.documents[0].pageItems.itemByName("sydinvader").isValid) {
     var sydinvader = app.activeDocument.links.itemByName("fmisy_Dummy.pdf.jpg").parent;
-    var sydinvader_pdf = new File(serveradress + filmapp + "vader/" + filnamn + "Syd-Osterbotten4.pdf");
+    var sydinvader_pdf = new File(serveradress + filmapp + "vader/" + filnamn + "Syd-Osterbotten14.pdf");
 
     try {
         sydinvader.place(sydinvader_pdf);
