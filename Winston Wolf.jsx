@@ -46,7 +46,7 @@ try {
 
   // fixa korrekt pratminus
   app.findGrepPreferences.findWhat = "\\\x{D}- ";
-  app.changeGrepPreferences.changeTo = "\\\x{D}–\\\x{2009}";
+  app.changeGrepPreferences.changeTo = "\\\x{D}– ";
   app.activeDocument.changeGrep();
 
   // fixa till korrekt blanksteg efter pratminus
