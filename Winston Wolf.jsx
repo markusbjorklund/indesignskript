@@ -44,6 +44,11 @@ try {
   app.findGrepPreferences = NothingEnum.nothing;
   app.changeGrepPreferences = NothingEnum.nothing;
 
+  // fixa korrekt pratminus
+  app.findGrepPreferences.findWhat = "\\\x{D}- ";
+  app.changeGrepPreferences.changeTo = "–\\\x{2009}";
+  app.activeDocument.changeGrep();
+
   // fixa till korrekt blanksteg efter pratminus
   app.findGrepPreferences.findWhat = "– ";
   app.changeGrepPreferences.changeTo = "–\\\x{2009}";
