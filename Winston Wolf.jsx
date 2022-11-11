@@ -44,9 +44,8 @@ function Wolf() {
     return;
   }
   else {
-    
-// sidnamn för e-post mm.
-var sidnamn = app.activeDocument.name;
+    // sidnamn för e-post mm.
+    var sidnamn = app.activeDocument.name;
 
     // töm sök och ersätt innan skriptet kör
     app.findGrepPreferences = NothingEnum.nothing;
