@@ -36,9 +36,10 @@ Call "The Wolf" by pressing F12.
 script author Markus Bjorklund
 */
 
-try {
-  // variabel för filnamnet på dokumentet – används för automejl(vbl, öt, sydin och bilagor) och sidlappar (vbl och öt)
-  var sidnamn = app.activeDocument.name;
+if (app.documents.length < 1) {
+  alert("För att köra skriptet måste du ha en sida öppen.");
+  return;
+}
 
   // töm sök och ersätt innan skriptet kör
   app.findGrepPreferences = NothingEnum.nothing;
@@ -246,7 +247,3 @@ try {
   // töm sök och ersätt innan skriptet avslutas
   app.findGrepPreferences = NothingEnum.nothing;
   app.changeGrepPreferences = NothingEnum.nothing;
-}
-catch (e) {
-  alert("För att köra skriptet måste du ha en sida öppen.");
-}
