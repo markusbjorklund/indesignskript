@@ -45,86 +45,86 @@ try {
   app.changeGrepPreferences = NothingEnum.nothing;
 
   // fixa korrekt pratminus
-  app.findGrep.findWhat = "\\\x{D}- ";
-  app.changeGrep.changeTo = "\\\x{D}– ";
+  app.findGrepPreferences.findWhat = "\\\x{D}- ";
+  app.changeGrepPreferences.changeTo = "\\\x{D}– ";
   app.activeDocument.changeGrep();
 
   // fixa till korrekt blanksteg efter pratminus
-  app.findGrep.findWhat = "– ";
-  app.changeGrep.changeTo = "–\\\x{2009}";
+  app.findGrepPreferences.findWhat = "– ";
+  app.changeGrepPreferences.changeTo = "–\\\x{2009}";
   app.activeDocument.changeGrep();
 
   // fixa stupid
-  app.findGrep.findWhat = " –\\\x{2009}";
-  app.changeGrep.changeTo = " – ";
+  app.findGrepPreferences.findWhat = " –\\\x{2009}";
+  app.changeGrepPreferences.changeTo = " – ";
   app.activeDocument.changeGrep();
 
   // fixa mellanslaget efter Ortnamn i text, direkt efter import från mananger
-  app.findGrep.findWhat = " \\\x{002E} ";
-  app.changeGrep.changeTo = "\\\x{002E}";
+  app.findGrepPreferences.findWhat = " \\\x{002E} ";
+  app.changeGrepPreferences.changeTo = "\\\x{002E}";
   app.activeDocument.changeGrep();
 
   // fixa mellanslaget efter Ortnamn i text, för artikel som finns i systemet och får ändrad layout
-  app.findGrep.findWhat = "\\\x{002E}  ";
-  app.changeGrep.changeTo = "\\\x{002E} ";
+  app.findGrepPreferences.findWhat = "\\\x{002E}  ";
+  app.changeGrepPreferences.changeTo = "\\\x{002E} ";
   app.activeDocument.changeGrep();
 
   // fixa dubbla rader på citatrutorna
-  app.findGrep.findWhat = "\\\x{A}              \\\x{D}";
-  app.changeGrep.changeTo = "";
+  app.findGrepPreferences.findWhat = "\\\x{A}              \\\x{D}";
+  app.changeGrepPreferences.changeTo = "";
   app.activeDocument.changeGrep();
 
   // fixa onödigt radbyte på tidningsbylinen – åtgärdar bugg som finns i nya NP
-  app.findGrep.findWhat = "\\\x{D}\\\x{0020}Vbl";
-  app.changeGrep.changeTo = " VBL";
+  app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}Vbl";
+  app.changeGrepPreferences.changeTo = " VBL";
   app.activeDocument.changeGrep();
 
-  app.findGrep.findWhat = "\\\x{D}\\\x{0020}VBL";
-  app.changeGrep.changeTo = " VBL";
+  app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}VBL";
+  app.changeGrepPreferences.changeTo = " VBL";
   app.activeDocument.changeGrep();
 
-  app.findGrep.findWhat = "\\\x{D}\\\x{0020}Öt";
-  app.changeGrep.changeTo = " ÖT";
+  app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}Öt";
+  app.changeGrepPreferences.changeTo = " ÖT";
   app.activeDocument.changeGrep();
 
-  app.findGrep.findWhat = "\\\x{D}\\\x{0020}ÖT";
-  app.changeGrep.changeTo = " ÖT";
+  app.findGrepPreferences.findWhat = "\\\x{D}\\\x{0020}ÖT";
+  app.changeGrepPreferences.changeTo = " ÖT";
   app.activeDocument.changeGrep();
 
   // rödflagga webbspecifika element i artikeln som kommer från managern
-  app.findGrep.findWhat = "Läs också:";
-  app.changeGrep.appliedCharacterStyle = "Bildingress ingång";
-  app.changeGrep.changeTo = "\\\x{D}Artikeln har länkat material på webben.\\\x{D}";
+  app.findGrepPreferences.findWhat = "Läs också:";
+  app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+  app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har länkat material på webben.\\\x{D}";
   app.activeDocument.changeGrep();
 
-  app.findGrep.findWhat = "LÄS OCKSÅ:";
-  app.changeGrep.appliedCharacterStyle = "Bildingress ingång";
-  app.changeGrep.changeTo = "\\\x{D}Artikeln har länkat material på webben.\\\x{D}";
+  app.findGrepPreferences.findWhat = "LÄS OCKSÅ:";
+  app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+  app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har länkat material på webben.\\\x{D}";
   app.activeDocument.changeGrep();
 
-  app.findGrep.findWhat = "Artikeln uppdaterad";
-  app.changeGrep.appliedCharacterStyle = "Bildingress ingång";
-  app.changeGrep.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+  app.findGrepPreferences.findWhat = "Artikeln uppdaterad";
+  app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+  app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
   app.activeDocument.changeGrep();
 
-  app.findGrep.findWhat = "Artikeln är uppdaterad";
-  app.changeGrep.appliedCharacterStyle = "Bildingress ingång";
-  app.changeGrep.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+  app.findGrepPreferences.findWhat = "Artikeln är uppdaterad";
+  app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+  app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
   app.activeDocument.changeGrep();
 
-  app.findGrep.findWhat = "Uppdaterad klockan";
-  app.changeGrep.appliedCharacterStyle = "Bildingress ingång";
-  app.changeGrep.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+  app.findGrepPreferences.findWhat = "Uppdaterad klockan";
+  app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+  app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
   app.activeDocument.changeGrep();
 
-  app.findGrep.findWhat = "Uppdaterad kl";
-  app.changeGrep.appliedCharacterStyle = "Bildingress ingång";
-  app.changeGrep.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+  app.findGrepPreferences.findWhat = "Uppdaterad kl";
+  app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+  app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
   app.activeDocument.changeGrep();
 
-  app.findGrep.findWhat = "Uppdaterad kl.";
-  app.changeGrep.appliedCharacterStyle = "Bildingress ingång";
-  app.changeGrep.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+  app.findGrepPreferences.findWhat = "Uppdaterad kl.";
+  app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+  app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
   app.activeDocument.changeGrep();
 
   // töm sök och ersätt
@@ -133,113 +133,113 @@ try {
 
   // ändra mejladresser för vasabladet
   if (sidnamn.match("VB-") || sidnamn.match("VBA")) {
-    app.findGrep.findWhat = "@ot.fi";
-    app.changeGrep.changeTo = "@vasabladet.fi";
+    app.findGrepPreferences.findWhat = "@ot.fi";
+    app.changeGrepPreferences.changeTo = "@vasabladet.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "@sydin.fi";
-    app.changeGrep.changeTo = "@vasabladet.fi";
+    app.findGrepPreferences.findWhat = "@sydin.fi";
+    app.changeGrepPreferences.changeTo = "@vasabladet.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "@hssmedia.fi";
-    app.changeGrep.changeTo = "@vasabladet.fi";
+    app.findGrepPreferences.findWhat = "@hssmedia.fi";
+    app.changeGrepPreferences.changeTo = "@vasabladet.fi";
     app.activeDocument.changeGrep();
 
     // ändra avdelningsmejladresser för vasabladet
-    app.findGrep.findWhat = "red@vasabladet.fi";
-    app.changeGrep.changeTo = "nyheter@vasabladet.fi";
+    app.findGrepPreferences.findWhat = "red@vasabladet.fi";
+    app.changeGrepPreferences.changeTo = "nyheter@vasabladet.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "sporten@vasabladet.fi";
-    app.changeGrep.changeTo = "sport@vasabladet.fi";
+    app.findGrepPreferences.findWhat = "sporten@vasabladet.fi";
+    app.changeGrepPreferences.changeTo = "sport@vasabladet.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "otkultur@vasabladet.fi";
-    app.changeGrep.changeTo = "kultur@vasabladet.fi";
+    app.findGrepPreferences.findWhat = "otkultur@vasabladet.fi";
+    app.changeGrepPreferences.changeTo = "kultur@vasabladet.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "otdebatt@vasabladet.fi";
-    app.changeGrep.changeTo = "debatt@vasabladet.fi";
+    app.findGrepPreferences.findWhat = "otdebatt@vasabladet.fi";
+    app.changeGrepPreferences.changeTo = "debatt@vasabladet.fi";
     app.activeDocument.changeGrep();
 
     // ändra telefonnummer för vasabladet
-    app.findGrep.findWhat = "06-7848 803";
-    app.changeGrep.changeTo = "06-7848 200";
+    app.findGrepPreferences.findWhat = "06-7848 803";
+    app.changeGrepPreferences.changeTo = "06-7848 200";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "06-7848 453";
-    app.changeGrep.changeTo = "06-7848 293";
+    app.findGrepPreferences.findWhat = "06-7848 453";
+    app.changeGrepPreferences.changeTo = "06-7848 293";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "06-7848 545";
-    app.changeGrep.changeTo = "06-7848 289";
+    app.findGrepPreferences.findWhat = "06-7848 545";
+    app.changeGrepPreferences.changeTo = "06-7848 289";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "06-7848 472";
-    app.changeGrep.changeTo = "06-7848 204";
+    app.findGrepPreferences.findWhat = "06-7848 472";
+    app.changeGrepPreferences.changeTo = "06-7848 204";
     app.activeDocument.changeGrep();
   }
 
   // ändra mejladresser för ot
   else if (sidnamn.match("OT-") || sidnamn.match("OTA")) {
-    app.findGrep.findWhat = "@vasabladet.fi";
-    app.changeGrep.changeTo = "@ot.fi";
+    app.findGrepPreferences.findWhat = "@vasabladet.fi";
+    app.changeGrepPreferences.changeTo = "@ot.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "@sydin.fi";
-    app.changeGrep.changeTo = "@ot.fi";
+    app.findGrepPreferences.findWhat = "@sydin.fi";
+    app.changeGrepPreferences.changeTo = "@ot.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "@hssmedia.fi";
-    app.changeGrep.changeTo = "@ot.fi";
+    app.findGrepPreferences.findWhat = "@hssmedia.fi";
+    app.changeGrepPreferences.changeTo = "@ot.fi";
     app.activeDocument.changeGrep();
 
     // ändra avdelningsmejladresser för ot
-    app.findGrep.findWhat = "nyheter@ot.fi";
-    app.changeGrep.changeTo = "red@ot.fi";
+    app.findGrepPreferences.findWhat = "nyheter@ot.fi";
+    app.changeGrepPreferences.changeTo = "red@ot.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "sport@ot.fi";
-    app.changeGrep.changeTo = "sporten@ot.fi";
+    app.findGrepPreferences.findWhat = "sport@ot.fi";
+    app.changeGrepPreferences.changeTo = "sporten@ot.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "kultur@ot.fi";
-    app.changeGrep.changeTo = "otkultur@ot.fi";
+    app.findGrepPreferences.findWhat = "kultur@ot.fi";
+    app.changeGrepPreferences.changeTo = "otkultur@ot.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "debatt@ot.fi";
-    app.changeGrep.changeTo = "otdebatt@ot.fi";
+    app.findGrepPreferences.findWhat = "debatt@ot.fi";
+    app.changeGrepPreferences.changeTo = "otdebatt@ot.fi";
     app.activeDocument.changeGrep();
     // take care of stupid
-    app.findGrep.findWhat = "otot";
-    app.changeGrep.changeTo = "ot";
+    app.findGrepPreferences.findWhat = "otot";
+    app.changeGrepPreferences.changeTo = "ot";
     app.activeDocument.changeGrep();
 
     // ändra telefonnummer för ot
-    app.findGrep.findWhat = "06-7848 200";
-    app.changeGrep.changeTo = "06-7848 803";
+    app.findGrepPreferences.findWhat = "06-7848 200";
+    app.changeGrepPreferences.changeTo = "06-7848 803";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "06-7848 293";
-    app.changeGrep.changeTo = "06-7848 453";
+    app.findGrepPreferences.findWhat = "06-7848 293";
+    app.changeGrepPreferences.changeTo = "06-7848 453";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "06-7848 289";
-    app.changeGrep.changeTo = "06-7848 545";
+    app.findGrepPreferences.findWhat = "06-7848 289";
+    app.changeGrepPreferences.changeTo = "06-7848 545";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "06-7848 204";
-    app.changeGrep.changeTo = "06-7848 472";
+    app.findGrepPreferences.findWhat = "06-7848 204";
+    app.changeGrepPreferences.changeTo = "06-7848 472";
     app.activeDocument.changeGrep();
   }
 
   // ändra mejladresser för sydin
   else if (sidnamn.match("SY-") || sidnamn.match("SYA")) {
-    app.findGrep.findWhat = "@vasabladet.fi";
-    app.changeGrep.changeTo = "@sydin.fi";
+    app.findGrepPreferences.findWhat = "@vasabladet.fi";
+    app.changeGrepPreferences.changeTo = "@sydin.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "@ot.fi";
-    app.changeGrep.changeTo = "@sydin.fi";
+    app.findGrepPreferences.findWhat = "@ot.fi";
+    app.changeGrepPreferences.changeTo = "@sydin.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "@hssmedia.fi";
-    app.changeGrep.changeTo = "@sydin.fi";
+    app.findGrepPreferences.findWhat = "@hssmedia.fi";
+    app.changeGrepPreferences.changeTo = "@sydin.fi";
     app.activeDocument.changeGrep();
   }
 
   // ändra mejladresser för bilagor
   else if (sidnamn.match("VBT1-") || sidnamn.match("OTT1-") || sidnamn.match("SYTT1-")) {
-    app.findGrep.findWhat = "@vasabladet.fi";
-    app.changeGrep.changeTo = "@hssmedia.fi";
+    app.findGrepPreferences.findWhat = "@vasabladet.fi";
+    app.changeGrepPreferences.changeTo = "@hssmedia.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "@ot.fi";
-    app.changeGrep.changeTo = "@hssmedia.fi";
+    app.findGrepPreferences.findWhat = "@ot.fi";
+    app.changeGrepPreferences.changeTo = "@hssmedia.fi";
     app.activeDocument.changeGrep();
-    app.findGrep.findWhat = "@sydin.fi";
-    app.changeGrep.changeTo = "@hssmedia.fi";
+    app.findGrepPreferences.findWhat = "@sydin.fi";
+    app.changeGrepPreferences.changeTo = "@hssmedia.fi";
     app.activeDocument.changeGrep();
   }
 
