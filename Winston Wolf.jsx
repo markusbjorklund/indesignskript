@@ -139,24 +139,24 @@ function Wolf() {
     app.changeGrepPreferences = NothingEnum.nothing;
 
     // fixa vanliga upprepningar
-    app.findGrepPreferences.findWhat = "en en";
-    app.changeGrepPreferences.changeTo = "en";
+    app.findGrepPreferences.findWhat = " en en ";
+    app.changeGrepPreferences.changeTo = " en ";
     app.activeDocument.changeGrep();
 
-    app.findGrepPreferences.findWhat = "ett ett";
-    app.changeGrepPreferences.changeTo = "ett";
+    app.findGrepPreferences.findWhat = " ett ett ";
+    app.changeGrepPreferences.changeTo = " ett ";
     app.activeDocument.changeGrep();
 
-    app.findGrepPreferences.findWhat = "är är";
-    app.changeGrepPreferences.changeTo = "är";
+    app.findGrepPreferences.findWhat = " är är ";
+    app.changeGrepPreferences.changeTo = " är ";
     app.activeDocument.changeGrep();
 
-    app.findGrepPreferences.findWhat = "för för";
-    app.changeGrepPreferences.changeTo = "för";
+    app.findGrepPreferences.findWhat = " för för ";
+    app.changeGrepPreferences.changeTo = " för ";
     app.activeDocument.changeGrep();
 
-    app.findGrepPreferences.findWhat = "att att";
-    app.changeGrepPreferences.changeTo = "att";
+    app.findGrepPreferences.findWhat = " att att ";
+    app.changeGrepPreferences.changeTo = " att ";
     app.activeDocument.changeGrep();
 
     // töm sök och ersätt
