@@ -163,6 +163,10 @@ function Wolf() {
     app.changeGrepPreferences.changeTo = " att ";
     app.activeDocument.changeGrep();
 
+    app.findGrepPreferences.findWhat = " det det ";
+    app.changeGrepPreferences.changeTo = " det ";
+    app.activeDocument.changeGrep();
+
     // töm sök och ersätt
     app.findGrepPreferences = NothingEnum.nothing;
     app.changeGrepPreferences = NothingEnum.nothing;
