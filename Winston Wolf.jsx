@@ -155,6 +155,10 @@ function Wolf() {
     app.changeGrepPreferences.changeTo = " för ";
     app.activeDocument.changeGrep();
 
+    app.findGrepPreferences.findWhat = " har har ";
+    app.changeGrepPreferences.changeTo = " har ";
+    app.activeDocument.changeGrep();
+
     app.findGrepPreferences.findWhat = " att att ";
     app.changeGrepPreferences.changeTo = " att ";
     app.activeDocument.changeGrep();
