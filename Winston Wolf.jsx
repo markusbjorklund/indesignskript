@@ -134,6 +134,26 @@ function Wolf() {
     app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
     app.activeDocument.changeGrep();
 
+    app.findGrepPreferences.findWhat = "Uppdaterad (\\d).(\\d)";
+    app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+    app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+    app.activeDocument.changeGrep();
+
+    app.findGrepPreferences.findWhat = "Uppdaterad (\\d)(\\d).(\\d)";
+    app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+    app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+    app.activeDocument.changeGrep();
+
+    app.findGrepPreferences.findWhat = "Uppdaterad (\\d)(\\d).(\\d)(\\d)";
+    app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+    app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+    app.activeDocument.changeGrep();
+
+    app.findGrepPreferences.findWhat = "Uppdaterad (\\d).(\\d)(\\d)";
+    app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
+    app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
+    app.activeDocument.changeGrep();
+
     // töm sök och ersätt
     app.findGrepPreferences = NothingEnum.nothing;
     app.changeGrepPreferences = NothingEnum.nothing;
