@@ -425,7 +425,6 @@ function Wolf() {
   app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\d) e str.(\\n)";
   app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3$4 e str.\n";
   app.activeDocument.changeGrep();
-  
   // MATCHVINJETTER SLUT
 
   // töm grep innan skriptet avslutas
