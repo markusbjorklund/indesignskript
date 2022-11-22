@@ -342,22 +342,22 @@ function Wolf() {
   app.activeDocument.changeGrep();
 
   // fixa konsekvent e förl.
-  app.findGrepPreferences.findWhat = "e(\\.) förl";
+  app.findGrepPreferences.findWhat = "e(\\.) förl.";
   app.changeGrepPreferences.changeTo = "e förl.";
   app.activeDocument.changeGrep();
 
   // fixa konsekvent e förl.
-  app.findGrepPreferences.findWhat = "e(\\.) förl(\\.)";
-  app.changeGrepPreferences.changeTo = "e förl.";
+  app.findGrepPreferences.findWhat = "e(\\.) förl";
+  app.changeGrepPreferences.changeTo = "e förl.ööö";
   app.activeDocument.changeGrep();
 
   // fixa konsekvent e str.
-  app.findGrepPreferences.findWhat = "e(\\.) str";
+  app.findGrepPreferences.findWhat = "e(\\.) str.";
   app.changeGrepPreferences.changeTo = "e str.";
   app.activeDocument.changeGrep();
 
   // fixa konsekvent e str.
-  app.findGrepPreferences.findWhat = "e(\\.) str\\.)";
+  app.findGrepPreferences.findWhat = "e(\\.) str";
   app.changeGrepPreferences.changeTo = "e str.";
   app.activeDocument.changeGrep();
 
