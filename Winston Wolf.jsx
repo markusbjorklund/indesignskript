@@ -152,7 +152,7 @@ function Wolf() {
     app.findGrepPreferences.findWhat = "Uppdaterad (\\d).(\\d)";
     app.changeGrepPreferences.appliedCharacterStyle = "Bildingress ingång";
     app.changeGrepPreferences.changeTo = "\\\x{D}Artikeln har uppdaterats på webben. Kolla så den fortfarande funkar i print.\\\x{D}";
-    app.activeDocument.changeGrep(); 
+    app.activeDocument.changeGrep();
 
     // töm sök och ersätt
     app.findGrepPreferences = NothingEnum.nothing;
@@ -303,8 +303,132 @@ function Wolf() {
       app.activeDocument.changeGrep();
     }
 
-    // töm sök och ersätt innan skriptet avslutas
+    // töm sök och ersätt
     app.findGrepPreferences = NothingEnum.nothing;
     app.changeGrepPreferences = NothingEnum.nothing;
   }
+
+  // MATCHVINJETTER START
+  // fixa rätt streck mellan resultaten
+  app.findGrepPreferences.findWhat = "(\\d)(\\d)-(\\d)(\\d)";
+  app.changeGrepPreferences.changeTo = "$1$2–$3$4";
+  app.activeDocument.changeGrep();
+
+  app.findGrepPreferences.findWhat = "(\\d)(\\d)-(\\d)";
+  app.changeGrepPreferences.changeTo = "$1$2–$3";
+  app.activeDocument.changeGrep();
+
+  app.findGrepPreferences.findWhat = "(\\d)-(\\d)(\\d)";
+  app.changeGrepPreferences.changeTo = "$1–$2$3";
+  app.activeDocument.changeGrep();
+
+  app.findGrepPreferences.findWhat = "(\\d)-(\\d)";
+  app.changeGrepPreferences.changeTo = "$1–$2";
+  app.activeDocument.changeGrep();
+
+  // ta bort statisktiken
+  app.findGrepPreferences.findWhat = "STATISTIK START(?s).*STATISTIK SLUT";
+  app.changeGrepPreferences.changeTo = "";
+  app.activeDocument.changeGrep();
+
+  // ta bort end-taggen
+  app.findGrepPreferences.findWhat = "STATISTIK SLUT";
+  app.changeGrepPreferences.changeTo = "";
+  app.activeDocument.changeGrep();
+
+  // fixa egen rad till periodsiffrorna
+  app.findGrepPreferences.findWhat = "\(\\d)( )\\((\\d)";
+  app.changeGrepPreferences.changeTo = "$1\\n($3";
+  app.activeDocument.changeGrep();
+
+  // fixa konsekvent e förl.
+  app.findGrepPreferences.findWhat = "e(\\.) förl";
+  app.changeGrepPreferences.changeTo = "e förl.";
+  app.activeDocument.changeGrep();
+
+  // fixa konsekvent e förl.
+  app.findGrepPreferences.findWhat = "e(\\.) förl.";
+  app.changeGrepPreferences.changeTo = "e förl.";
+  app.activeDocument.changeGrep();
+
+  // fixa konsekvent e str.
+  app.findGrepPreferences.findWhat = "e(\\.) str";
+  app.changeGrepPreferences.changeTo = "e str.";
+  app.activeDocument.changeGrep();
+
+  // fixa konsekvent e str.
+  app.findGrepPreferences.findWhat = "e(\\.) str.";
+  app.changeGrepPreferences.changeTo = "e str.";
+  app.activeDocument.changeGrep();
+
+  // fixa egen rad till periodsiffrorna efter förl.
+  app.findGrepPreferences.findWhat = "\(\\.)( )\\((\\d)";
+  app.changeGrepPreferences.changeTo = "$1\\n($3";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben x-x
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben xx-x
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben xx-xx
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\d)(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4$5\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben x-xx
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\d)(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3$4\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben x-x förl.
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d) e förl.(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3 e förl.\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben xx-x förl.
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d) e förl.(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4 e förl.\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben xx-xx förl.
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\d) e förl.(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4$5 e förl.\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben x-xx förl.
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\d) e förl.(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3$4 e förl.\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben xx-x str.
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d) e str.(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4 e str.\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben x-x str.
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d) e str.(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3 e str.\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben xx-xx str.
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\d) e str.(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4$5 e str.\n";
+  app.activeDocument.changeGrep();
+
+  // fixa shift-tabben x-xx str.
+  app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\d) e str.(\\n)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3$4 e str.\n";
+  app.activeDocument.changeGrep();
+  
+  // MATCHVINJETTER SLUT
+
+  // töm grep innan skriptet avslutas
+  app.findGrepPreferences = NothingEnum.nothing;
+  app.changeGrepPreferences = NothingEnum.nothing;
 }
