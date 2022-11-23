@@ -312,9 +312,8 @@ function Putsa() {
   app.changeGrepPreferences.changeTo = "e förl.";
   app.activeDocument.changeGrep();
 
-  // fixa konsekvent e förl.
   app.findGrepPreferences.findWhat = "e(\\.) förl";
-  app.changeGrepPreferences.changeTo = "e förl.ööö";
+  app.changeGrepPreferences.changeTo = "e förl.";
   app.activeDocument.changeGrep();
 
   // fixa konsekvent e str.
@@ -322,13 +321,16 @@ function Putsa() {
   app.changeGrepPreferences.changeTo = "e str.";
   app.activeDocument.changeGrep();
 
-  // fixa konsekvent e str.
   app.findGrepPreferences.findWhat = "e(\\.) str";
   app.changeGrepPreferences.changeTo = "e str.";
   app.activeDocument.changeGrep();
 
   // fixa egen rad till periodsiffrorna efter förl.
   app.findGrepPreferences.findWhat = "\(\\.)( )\\((\\d)";
+  app.changeGrepPreferences.changeTo = "$1\\n($3";
+  app.activeDocument.changeGrep();
+
+  app.findGrepPreferences.findWhat = "\(\\.)()\\((\\d)";
   app.changeGrepPreferences.changeTo = "$1\\n($3";
   app.activeDocument.changeGrep();
 
