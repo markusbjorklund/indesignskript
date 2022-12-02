@@ -292,6 +292,11 @@ function Putsa() {
   app.changeGrepPreferences.changeTo = "$1–$2";
   app.activeDocument.changeGrep();
 
+  // fixa strecket rätt för telefonnummern efter matchvinjettautmatiken
+  app.findGrepPreferences.findWhat = "(\\d)(\\d)-(\\d)(\\d)(\\d)(\\d)( )(\\d)(\\d)(\\d)";
+  app.changeGrepPreferences.changeTo = "$1$2-$3$4$5$6 $7$8$9";
+  app.activeDocument.changeGrep();
+
   // ta bort statisktiken
   app.findGrepPreferences.findWhat = "STATISTIK START(?s).*STATISTIK SLUT";
   app.changeGrepPreferences.changeTo = "";
