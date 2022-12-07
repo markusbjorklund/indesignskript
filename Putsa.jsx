@@ -400,6 +400,11 @@ function Putsa() {
   app.activeDocument.changeGrep();
   // MATCHVINJETTER SLUT
 
+  // fixa strecket rätt för telefonnummern efter matchvinjettautmatiken
+  app.findGrepPreferences.findWhat = "06–(\\d)(\\d)(\\d)(\\d)( )(\\d)(\\d)(\\d)";
+  app.changeGrepPreferences.changeTo = "06-$1$2$3$4$5$6$7$8";
+  app.activeDocument.changeGrep();
+
   // töm grep innan skriptet avslutas
   app.findGrepPreferences = NothingEnum.nothing;
   app.changeGrepPreferences = NothingEnum.nothing;
