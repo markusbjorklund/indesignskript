@@ -405,6 +405,11 @@ function Putsa() {
   app.changeGrepPreferences.changeTo = "06-$1$2$3$4$5$6$7$8";
   app.activeDocument.changeGrep();
 
+  // fixa till korrekt blanksteg mellan tusental
+  app.findGrepPreferences.findWhat = "(\\d) (\\d)(\\d)(\\d)";
+  app.changeGrepPreferences.changeTo = "$1\\\x{2009}$2$3$4";
+  app.activeDocument.changeGrep();
+
   // töm grep innan skriptet avslutas
   app.findGrepPreferences = NothingEnum.nothing;
   app.changeGrepPreferences = NothingEnum.nothing;
