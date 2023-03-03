@@ -31,6 +31,11 @@ function Putsa() {
     app.findGrepPreferences.findWhat = " –\\\x{2009}";
     app.changeGrepPreferences.changeTo = " – ";
     app.activeDocument.changeGrep();
+    
+    // fixa citattecknen
+    app.findGrepPreferences.findWhat = "\\\x{00022}";
+    app.changeGrepPreferences.changeTo = "\\\x{201D}";
+    app.activeDocument.changeGrep();
 
     // fixa mellanslaget efter Ortnamn i text, direkt efter import från mananger
     app.findGrepPreferences.findWhat = " \\\x{002E} ";
