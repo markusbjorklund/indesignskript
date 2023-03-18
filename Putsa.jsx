@@ -262,7 +262,7 @@ function Putsa() {
     }
 
     // ändra mejladresser för bilagor
-    else if (sidnamn.match("VBT1-") || sidnamn.match("OTT1-") || sidnamn.match("SYTT1-")) {
+    else if (sidnamn.match("VBT") || sidnamn.match("OTT") || sidnamn.match("SYTT")) {
       app.findGrepPreferences.findWhat = "@vasabladet.fi";
       app.changeGrepPreferences.changeTo = "@hssmedia.fi";
       app.activeDocument.changeGrep();
@@ -413,6 +413,16 @@ function Putsa() {
   // fixa till korrekt blanksteg mellan tusental
   app.findGrepPreferences.findWhat = "(\\d) (\\d)(\\d)(\\d)";
   app.changeGrepPreferences.changeTo = "$1\\\x{2009}$2$3$4";
+  app.activeDocument.changeGrep();
+  
+    // fixa strecket rätt för telefonnummern (fix stupid)
+  app.findGrepPreferences.findWhat = "06–(\\d)(\\d)(\\d)(\\d)(\\\x{2009})(\\d)(\\d)(\\d)";
+ app.changeGrepPreferences.changeTo = "06-$1$2$3$4 $6$7$8";
+  app.activeDocument.changeGrep();
+  
+      // fixa strecket rätt för telefonnummern (fix stupid)
+  app.findGrepPreferences.findWhat = "06-(\\d)(\\d)(\\d)(\\d)(\\\x{2009})(\\d)(\\d)(\\d)";
+ app.changeGrepPreferences.changeTo = "06-$1$2$3$4 $6$7$8";
   app.activeDocument.changeGrep();
 
   // töm grep innan skriptet avslutas
