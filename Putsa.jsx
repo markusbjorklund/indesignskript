@@ -17,6 +17,15 @@ function Putsa() {
     app.findGrepPreferences = NothingEnum.nothing;
     app.changeGrepPreferences = NothingEnum.nothing;
 
+    // fixa figursättning
+    app.findObjectPreferences.appliedObjectStyles = "Bildtextruta";
+    app.changeObjectPreferences.appliedObjectStyles = app.documents[0].objectStyles.itemByName("Bildtextruta");
+    app.documents[0].changeObject();
+
+    app.findObjectPreferences.appliedObjectStyles = "Bildruta";
+    app.changeObjectPreferences.appliedObjectStyles = app.documents[0].objectStyles.itemByName("Bildruta");
+    app.documents[0].changeObject();
+
     // fixa korrekt pratminus
     app.findGrepPreferences.findWhat = "\\\x{D}- ";
     app.changeGrepPreferences.changeTo = "\\\x{D}– ";
@@ -31,7 +40,7 @@ function Putsa() {
     app.findGrepPreferences.findWhat = " –\\\x{2009}";
     app.changeGrepPreferences.changeTo = " – ";
     app.activeDocument.changeGrep();
-    
+
     // fixa citattecknen
     app.findGrepPreferences.findWhat = "\\\x{00022}";
     app.changeGrepPreferences.changeTo = "\\\x{201D}";
@@ -414,15 +423,15 @@ function Putsa() {
   app.findGrepPreferences.findWhat = "(\\d) (\\d)(\\d)(\\d)";
   app.changeGrepPreferences.changeTo = "$1\\\x{2009}$2$3$4";
   app.activeDocument.changeGrep();
-  
-    // fixa strecket rätt för telefonnummern (fix stupid)
+
+  // fixa strecket rätt för telefonnummern (fix stupid)
   app.findGrepPreferences.findWhat = "06–(\\d)(\\d)(\\d)(\\d)(\\\x{2009})(\\d)(\\d)(\\d)";
- app.changeGrepPreferences.changeTo = "06-$1$2$3$4 $6$7$8";
+  app.changeGrepPreferences.changeTo = "06-$1$2$3$4 $6$7$8";
   app.activeDocument.changeGrep();
-  
-      // fixa strecket rätt för telefonnummern (fix stupid)
+
+  // fixa strecket rätt för telefonnummern (fix stupid)
   app.findGrepPreferences.findWhat = "06-(\\d)(\\d)(\\d)(\\d)(\\\x{2009})(\\d)(\\d)(\\d)";
- app.changeGrepPreferences.changeTo = "06-$1$2$3$4 $6$7$8";
+  app.changeGrepPreferences.changeTo = "06-$1$2$3$4 $6$7$8";
   app.activeDocument.changeGrep();
 
   // töm grep innan skriptet avslutas
