@@ -39,7 +39,7 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_kryss;
                         
             var krysset = app.activeDocument.links.itemByName("kryss_Dummy.jpg").parent;
-            var kryss_pdf = new File(serveradress + filmapp + filnamn + "-TVRVKO-PLAY-0-0-print.pdf");
+            var kryss_pdf = new File(serveradress + filmapp + filnamn + "_Korsord.pdf");
 
             try {
                 krysset.place(kryss_pdf);
@@ -59,7 +59,7 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_kryss;
 
             var krysset = app.activeDocument.links.itemByName("kryss_Dummy.jpg").parent;
-            var kryss_pdf = new File(serveradress + filmapp + filnamn + "-TVRVKO-PLAY-0-0-print.pdf");
+            var kryss_pdf = new File(serveradress + filmapp + filnamn + "_Korsord.pdf");
 
             try {
                 krysset.place(kryss_pdf);
@@ -79,7 +79,7 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_kryss;
 
             var krysset = app.activeDocument.links.itemByName("kryss_Dummy.jpg").parent;
-            var kryss_pdf = new File(serveradress + filmapp + filnamn + "-TVRVKO-PLAY-0-0-print.pdf");
+            var kryss_pdf = new File(serveradress + filmapp + filnamn + "_Korsord.pdf");
 
             try {
                 krysset.place(kryss_pdf);
@@ -99,7 +99,7 @@ function dialogWRadio(dlgName, cancelIt) {
             var filnamn = dagens_kryss;
 
             var krysset = app.activeDocument.links.itemByName("kryss_Dummy.jpg").parent;
-            var kryss_pdf = new File(serveradress + filmapp + filnamn + "-TVRVKO-PLAY-0-0-print.pdf");
+            var kryss_pdf = new File(serveradress + filmapp + filnamn + "_Korsord.pdf");
 
             try {
                 krysset.place(kryss_pdf);
