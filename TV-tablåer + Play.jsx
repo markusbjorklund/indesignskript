@@ -66,20 +66,6 @@ function dialogWRadio(dlgName, cancelIt) {
                 tv_print.place(tv_0_print);
             }
 
-            // sydins specialare för tv5
-            if (app.documents[0].pageItems.itemByName("tv5").isValid) {
-                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-                tv_h_print.place(tv_1_print);
-            }
-
-            // sydins specialare för kunskapskanalen
-            if (app.documents[0].pageItems.itemByName("kunskapskanalen").isValid) {
-                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-                tv_h_print.place(tv_1_print);
-            }
-
             else if (app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").isValid) {
                 var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
                 var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
@@ -127,20 +113,6 @@ function dialogWRadio(dlgName, cancelIt) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
                 var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
-            }
-
-            // sydins specialare för tv5
-            if (app.documents[0].pageItems.itemByName("tv5").isValid) {
-                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-                tv_h_print.place(tv_1_print);
-            }
-
-            // sydins specialare för kunskapskanalen
-            if (app.documents[0].pageItems.itemByName("kunskapskanalen").isValid) {
-                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-                tv_h_print.place(tv_1_print);
             }
 
             else if (app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").isValid) {
@@ -192,20 +164,6 @@ function dialogWRadio(dlgName, cancelIt) {
                 tv_print.place(tv_0_print);
             }
 
-            // sydins specialare för tv5
-            if (app.documents[0].pageItems.itemByName("tv5").isValid) {
-                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-                tv_h_print.place(tv_1_print);
-            }
-
-            // sydins specialare för kunskapskanalen
-            if (app.documents[0].pageItems.itemByName("kunskapskanalen").isValid) {
-                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-                tv_h_print.place(tv_1_print);
-            }
-
             else if (app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").isValid) {
                 var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
                 var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
@@ -253,20 +211,6 @@ function dialogWRadio(dlgName, cancelIt) {
                 var tv_print = app.activeDocument.links.itemByName("tv-v_Dummy_.jpg").parent;
                 var tv_0_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-0-print" + ".pdf");
                 tv_print.place(tv_0_print);
-            }
-
-            // sydins specialare för tv5
-            if (app.documents[0].pageItems.itemByName("tv5").isValid) {
-                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-                tv_h_print.place(tv_1_print);
-            }
-
-            // sydins specialare för kunskapskanalen
-            if (app.documents[0].pageItems.itemByName("kunskapskanalen").isValid) {
-                var tv_h_print = app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").parent;
-                var tv_1_print = new File(serveradress + filmapp + filnamn + "-TVRDAG-TSV-0-1-print" + ".pdf");
-                tv_h_print.place(tv_1_print);
             }
 
             else if (app.activeDocument.links.itemByName("tv-h_Dummy_.jpg").isValid) {
