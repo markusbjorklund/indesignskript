@@ -231,273 +231,268 @@ function Putsa() {
     app.findGrepPreferences.findWhat = "Sydin – närproducerade lokala nyheter";
     app.changeGrepPreferences.changeTo = "Vasabladet – närproducerat sedan 1856x";
     app.activeDocument.changeGrep();
-  }
 
     // ändra mejladresser för ot
     else if (sidnamn.match("OT-") || sidnamn.match("OTA")) {
-    app.findGrepPreferences.findWhat = "@vasabladet.fi";
-    app.changeGrepPreferences.changeTo = "@ot.fi";
-    app.activeDocument.changeGrep();
-    app.findGrepPreferences.findWhat = "@sydin.fi";
-    app.changeGrepPreferences.changeTo = "@ot.fi";
-    app.activeDocument.changeGrep();
-    app.findGrepPreferences.findWhat = "@hssmedia.fi";
-    app.changeGrepPreferences.changeTo = "@ot.fi";
-    app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "@vasabladet.fi";
+      app.changeGrepPreferences.changeTo = "@ot.fi";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "@sydin.fi";
+      app.changeGrepPreferences.changeTo = "@ot.fi";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "@hssmedia.fi";
+      app.changeGrepPreferences.changeTo = "@ot.fi";
+      app.activeDocument.changeGrep();
 
-    // ändra avdelningsmejladresser för ot
-    app.findGrepPreferences.findWhat = "nyheter@ot.fi";
-    app.changeGrepPreferences.changeTo = "red@ot.fi";
-    app.activeDocument.changeGrep();
-    app.findGrepPreferences.findWhat = "sport@ot.fi";
-    app.changeGrepPreferences.changeTo = "sporten@ot.fi";
-    app.activeDocument.changeGrep();
-    app.findGrepPreferences.findWhat = "kultur@ot.fi";
-    app.changeGrepPreferences.changeTo = "otkultur@ot.fi";
-    app.activeDocument.changeGrep();
-    app.findGrepPreferences.findWhat = "debatt@ot.fi";
-    app.changeGrepPreferences.changeTo = "otdebatt@ot.fi";
-    app.activeDocument.changeGrep();
-    // take care of stupid
-    app.findGrepPreferences.findWhat = "otot";
-    app.changeGrepPreferences.changeTo = "ot";
-    app.activeDocument.changeGrep();
+      // ändra avdelningsmejladresser för ot
+      app.findGrepPreferences.findWhat = "nyheter@ot.fi";
+      app.changeGrepPreferences.changeTo = "red@ot.fi";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "sport@ot.fi";
+      app.changeGrepPreferences.changeTo = "sporten@ot.fi";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "kultur@ot.fi";
+      app.changeGrepPreferences.changeTo = "otkultur@ot.fi";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "debatt@ot.fi";
+      app.changeGrepPreferences.changeTo = "otdebatt@ot.fi";
+      app.activeDocument.changeGrep();
+      // take care of stupid
+      app.findGrepPreferences.findWhat = "otot";
+      app.changeGrepPreferences.changeTo = "ot";
+      app.activeDocument.changeGrep();
 
-    // ändra telefonnummer för ot
-    app.findGrepPreferences.findWhat = "06-7848 200";
-    app.changeGrepPreferences.changeTo = "06-7848 803";
-    app.activeDocument.changeGrep();
-    app.findGrepPreferences.findWhat = "06-7848 293";
-    app.changeGrepPreferences.changeTo = "06-7848 453";
-    app.activeDocument.changeGrep();
-    app.findGrepPreferences.findWhat = "06-7848 289";
-    app.changeGrepPreferences.changeTo = "06-7848 545";
-    app.activeDocument.changeGrep();
-    app.findGrepPreferences.findWhat = "06-7848 204";
-    app.changeGrepPreferences.changeTo = "06-7848 472";
-    app.activeDocument.changeGrep();
-  }
+      // ändra telefonnummer för ot
+      app.findGrepPreferences.findWhat = "06-7848 200";
+      app.changeGrepPreferences.changeTo = "06-7848 803";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "06-7848 293";
+      app.changeGrepPreferences.changeTo = "06-7848 453";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "06-7848 289";
+      app.changeGrepPreferences.changeTo = "06-7848 545";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "06-7848 204";
+      app.changeGrepPreferences.changeTo = "06-7848 472";
+      app.activeDocument.changeGrep();
 
-  // ändra pluggar för ot
-  app.findGrepPreferences.findWhat = "Vasabladet – bäst på lokala nyheter";
-  app.changeGrepPreferences.changeTo = "ÖT – bäst på lokala nyheter";
-  app.activeDocument.changeGrep();
-  app.findGrepPreferences.findWhat = "Sydin – bäst på lokala nyheter";
-  app.changeGrepPreferences.changeTo = "ÖT – bäst på lokala nyheter";
-  app.activeDocument.changeGrep();
-  app.findGrepPreferences.findWhat = "Vasabladet – närproducerat sedan 1856";
-  app.changeGrepPreferences.changeTo = "ÖT – närproducerat sedan 1883";
-  app.activeDocument.changeGrep();
-  app.findGrepPreferences.findWhat = "www.vasabladet.fi – ännu mera för dig som prenumerant";
-  app.changeGrepPreferences.changeTo = "www.ot.fi – ännu mera för dig som prenumerant";
-  app.activeDocument.changeGrep();
-  app.findGrepPreferences.findWhat = "www.sydin.fi – ännu mera för dig som prenumerant";
-  app.changeGrepPreferences.changeTo = "www.ot.fi – ännu mera för dig som prenumerant";
-  app.activeDocument.changeGrep();
-  app.findGrepPreferences.findWhat = "Sydin – närproducerade lokala nyheter";
-  app.changeGrepPreferences.changeTo = "ÖT – närproducerat sedan 1883";
-  app.activeDocument.changeGrep();
-}
+      // ändra pluggar för ot
+      app.findGrepPreferences.findWhat = "Vasabladet – bäst på lokala nyheter";
+      app.changeGrepPreferences.changeTo = "ÖT – bäst på lokala nyheter";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "Sydin – bäst på lokala nyheter";
+      app.changeGrepPreferences.changeTo = "ÖT – bäst på lokala nyheter";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "Vasabladet – närproducerat sedan 1856";
+      app.changeGrepPreferences.changeTo = "ÖT – närproducerat sedan 1883";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "www.vasabladet.fi – ännu mera för dig som prenumerant";
+      app.changeGrepPreferences.changeTo = "www.ot.fi – ännu mera för dig som prenumerant";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "www.sydin.fi – ännu mera för dig som prenumerant";
+      app.changeGrepPreferences.changeTo = "www.ot.fi – ännu mera för dig som prenumerant";
+      app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "Sydin – närproducerade lokala nyheter";
+      app.changeGrepPreferences.changeTo = "ÖT – närproducerat sedan 1883";
+      app.activeDocument.changeGrep();
 
     // ändra mejladresser för sydin
     else if (sidnamn.match("SY-") || sidnamn.match("SYA")) {
-  app.findGrepPreferences.findWhat = "@vasabladet.fi";
-  app.changeGrepPreferences.changeTo = "@sydin.fi";
-  app.activeDocument.changeGrep();
-  app.findGrepPreferences.findWhat = "@ot.fi";
-  app.changeGrepPreferences.changeTo = "@sydin.fi";
-  app.activeDocument.changeGrep();
-  app.findGrepPreferences.findWhat = "@hssmedia.fi";
-  app.changeGrepPreferences.changeTo = "@sydin.fi";
-  app.activeDocument.changeGrep();
-}
+        app.findGrepPreferences.findWhat = "@vasabladet.fi";
+        app.changeGrepPreferences.changeTo = "@sydin.fi";
+        app.activeDocument.changeGrep();
+        app.findGrepPreferences.findWhat = "@ot.fi";
+        app.changeGrepPreferences.changeTo = "@sydin.fi";
+        app.activeDocument.changeGrep();
+        app.findGrepPreferences.findWhat = "@hssmedia.fi";
+        app.changeGrepPreferences.changeTo = "@sydin.fi";
+        app.activeDocument.changeGrep();
 
-// ändra pluggar för sydin
-app.findGrepPreferences.findWhat = "Vasabladet – bäst på lokala nyheter";
-app.changeGrepPreferences.changeTo = "Sydin – bäst på lokala nyheter";
-app.activeDocument.changeGrep();
-app.findGrepPreferences.findWhat = "ÖT – bäst på lokala nyheter";
-app.changeGrepPreferences.changeTo = "Sydin – bäst på lokala nyheter";
-app.activeDocument.changeGrep();
-app.findGrepPreferences.findWhat = "Vasabladet – närproducerat sedan 1856";
-app.changeGrepPreferences.changeTo = "Sydin – närproducerade lokala nyheter";
-app.activeDocument.changeGrep();
-app.findGrepPreferences.findWhat = "ÖT – närproducerat sedan 1883";
-app.changeGrepPreferences.changeTo = "Sydin – närproducerade lokala nyheter";
-app.activeDocument.changeGrep();
-app.findGrepPreferences.findWhat = "www.vasabladet.fi – ännu mera för dig som prenumerant";
-app.changeGrepPreferences.changeTo = "www.sydin.fi – ännu mera för dig som prenumerant";
-app.activeDocument.changeGrep();
-app.findGrepPreferences.findWhat = "www.ot.fi – ännu mera för dig som prenumerant";
-app.changeGrepPreferences.changeTo = "www.sydin.fi – ännu mera för dig som prenumerant";
-app.activeDocument.changeGrep();
-        }
+        // ändra pluggar för sydin
+        app.findGrepPreferences.findWhat = "Vasabladet – bäst på lokala nyheter";
+        app.changeGrepPreferences.changeTo = "Sydin – bäst på lokala nyheter";
+        app.activeDocument.changeGrep();
+        app.findGrepPreferences.findWhat = "ÖT – bäst på lokala nyheter";
+        app.changeGrepPreferences.changeTo = "Sydin – bäst på lokala nyheter";
+        app.activeDocument.changeGrep();
+        app.findGrepPreferences.findWhat = "Vasabladet – närproducerat sedan 1856";
+        app.changeGrepPreferences.changeTo = "Sydin – närproducerade lokala nyheter";
+        app.activeDocument.changeGrep();
+        app.findGrepPreferences.findWhat = "ÖT – närproducerat sedan 1883";
+        app.changeGrepPreferences.changeTo = "Sydin – närproducerade lokala nyheter";
+        app.activeDocument.changeGrep();
+        app.findGrepPreferences.findWhat = "www.vasabladet.fi – ännu mera för dig som prenumerant";
+        app.changeGrepPreferences.changeTo = "www.sydin.fi – ännu mera för dig som prenumerant";
+        app.activeDocument.changeGrep();
+        app.findGrepPreferences.findWhat = "www.ot.fi – ännu mera för dig som prenumerant";
+        app.changeGrepPreferences.changeTo = "www.sydin.fi – ännu mera för dig som prenumerant";
+        app.activeDocument.changeGrep();
 
     // ändra mejladresser för bilagor
     else if (sidnamn.match("VBT") || sidnamn.match("OTT") || sidnamn.match("SYTT")) {
-  app.findGrepPreferences.findWhat = "@vasabladet.fi";
-  app.changeGrepPreferences.changeTo = "@hssmedia.fi";
-  app.activeDocument.changeGrep();
-  app.findGrepPreferences.findWhat = "@ot.fi";
-  app.changeGrepPreferences.changeTo = "@hssmedia.fi";
-  app.activeDocument.changeGrep();
-  app.findGrepPreferences.findWhat = "@sydin.fi";
-  app.changeGrepPreferences.changeTo = "@hssmedia.fi";
-  app.activeDocument.changeGrep();
-}
+          app.findGrepPreferences.findWhat = "@vasabladet.fi";
+          app.changeGrepPreferences.changeTo = "@hssmedia.fi";
+          app.activeDocument.changeGrep();
+          app.findGrepPreferences.findWhat = "@ot.fi";
+          app.changeGrepPreferences.changeTo = "@hssmedia.fi";
+          app.activeDocument.changeGrep();
+          app.findGrepPreferences.findWhat = "@sydin.fi";
+          app.changeGrepPreferences.changeTo = "@hssmedia.fi";
+          app.activeDocument.changeGrep();
+        }
 
-// töm sök och ersätt
-app.findGrepPreferences = NothingEnum.nothing;
-app.changeGrepPreferences = NothingEnum.nothing;
-  }
+        // töm sök och ersätt
+        app.findGrepPreferences = NothingEnum.nothing;
+        app.changeGrepPreferences = NothingEnum.nothing;
+      }
 
-// MATCHVINJETTER START
-// fixa rätt streck mellan resultaten
-app.findGrepPreferences.findWhat = "(\\d)(\\d)-(\\d)(\\d)";
-app.changeGrepPreferences.changeTo = "$1$2–$3$4";
-app.activeDocument.changeGrep();
+      // MATCHVINJETTER START
+      // fixa rätt streck mellan resultaten
+      app.findGrepPreferences.findWhat = "(\\d)(\\d)-(\\d)(\\d)";
+      app.changeGrepPreferences.changeTo = "$1$2–$3$4";
+      app.activeDocument.changeGrep();
 
-app.findGrepPreferences.findWhat = "(\\d)(\\d)-(\\d)";
-app.changeGrepPreferences.changeTo = "$1$2–$3";
-app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "(\\d)(\\d)-(\\d)";
+      app.changeGrepPreferences.changeTo = "$1$2–$3";
+      app.activeDocument.changeGrep();
 
-app.findGrepPreferences.findWhat = "(\\d)-(\\d)(\\d)";
-app.changeGrepPreferences.changeTo = "$1–$2$3";
-app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "(\\d)-(\\d)(\\d)";
+      app.changeGrepPreferences.changeTo = "$1–$2$3";
+      app.activeDocument.changeGrep();
 
-app.findGrepPreferences.findWhat = "(\\d)-(\\d)";
-app.changeGrepPreferences.changeTo = "$1–$2";
-app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "(\\d)-(\\d)";
+      app.changeGrepPreferences.changeTo = "$1–$2";
+      app.activeDocument.changeGrep();
 
-// fixa strecket rätt för telefonnummern efter matchvinjettautmatiken
-app.findGrepPreferences.findWhat = "(\\d)(\\d)-(\\d)(\\d)(\\d)(\\d)( )(\\d)(\\d)(\\d)";
-app.changeGrepPreferences.changeTo = "$1$2-$3$4$5$6 $7$8$9";
-app.activeDocument.changeGrep();
+      // fixa strecket rätt för telefonnummern efter matchvinjettautmatiken
+      app.findGrepPreferences.findWhat = "(\\d)(\\d)-(\\d)(\\d)(\\d)(\\d)( )(\\d)(\\d)(\\d)";
+      app.changeGrepPreferences.changeTo = "$1$2-$3$4$5$6 $7$8$9";
+      app.activeDocument.changeGrep();
 
-// ta bort statisktiken
-app.findGrepPreferences.findWhat = "STATISTIK START(?s).*STATISTIK SLUT";
-app.changeGrepPreferences.changeTo = "";
-app.activeDocument.changeGrep();
+      // ta bort statisktiken
+      app.findGrepPreferences.findWhat = "STATISTIK START(?s).*STATISTIK SLUT";
+      app.changeGrepPreferences.changeTo = "";
+      app.activeDocument.changeGrep();
 
-// ta bort end-taggen
-app.findGrepPreferences.findWhat = "STATISTIK SLUT";
-app.changeGrepPreferences.changeTo = "";
-app.activeDocument.changeGrep();
+      // ta bort end-taggen
+      app.findGrepPreferences.findWhat = "STATISTIK SLUT";
+      app.changeGrepPreferences.changeTo = "";
+      app.activeDocument.changeGrep();
 
-// fixa egen rad till periodsiffrorna
-app.findGrepPreferences.findWhat = "\(\\d)( )\\((\\d)";
-app.changeGrepPreferences.changeTo = "$1\\n($3";
-app.activeDocument.changeGrep();
+      // fixa egen rad till periodsiffrorna
+      app.findGrepPreferences.findWhat = "\(\\d)( )\\((\\d)";
+      app.changeGrepPreferences.changeTo = "$1\\n($3";
+      app.activeDocument.changeGrep();
 
-// fixa konsekvent e förl.
-app.findGrepPreferences.findWhat = "e(\\.) förl.";
-app.changeGrepPreferences.changeTo = "e förl.";
-app.activeDocument.changeGrep();
+      // fixa konsekvent e förl.
+      app.findGrepPreferences.findWhat = "e(\\.) förl.";
+      app.changeGrepPreferences.changeTo = "e förl.";
+      app.activeDocument.changeGrep();
 
-app.findGrepPreferences.findWhat = "e(\\.) förl";
-app.changeGrepPreferences.changeTo = "e förl.";
-app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "e(\\.) förl";
+      app.changeGrepPreferences.changeTo = "e förl.";
+      app.activeDocument.changeGrep();
 
-// fixa konsekvent e str.
-app.findGrepPreferences.findWhat = "e(\\.) str.";
-app.changeGrepPreferences.changeTo = "e str.";
-app.activeDocument.changeGrep();
+      // fixa konsekvent e str.
+      app.findGrepPreferences.findWhat = "e(\\.) str.";
+      app.changeGrepPreferences.changeTo = "e str.";
+      app.activeDocument.changeGrep();
 
-app.findGrepPreferences.findWhat = "e(\\.) str";
-app.changeGrepPreferences.changeTo = "e str.";
-app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "e(\\.) str";
+      app.changeGrepPreferences.changeTo = "e str.";
+      app.activeDocument.changeGrep();
 
-// fixa egen rad till periodsiffrorna efter förl.
-app.findGrepPreferences.findWhat = "\(\\.)( )\\((\\d)";
-app.changeGrepPreferences.changeTo = "$1\\n($3";
-app.activeDocument.changeGrep();
+      // fixa egen rad till periodsiffrorna efter förl.
+      app.findGrepPreferences.findWhat = "\(\\.)( )\\((\\d)";
+      app.changeGrepPreferences.changeTo = "$1\\n($3";
+      app.activeDocument.changeGrep();
 
-app.findGrepPreferences.findWhat = "\(\\.)()\\((\\d)";
-app.changeGrepPreferences.changeTo = "$1\\n($3";
-app.activeDocument.changeGrep();
+      app.findGrepPreferences.findWhat = "\(\\.)()\\((\\d)";
+      app.changeGrepPreferences.changeTo = "$1\\n($3";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben x-x
-app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben x-x
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben xx-x
-app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben xx-x
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben xx-xx
-app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\d)(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4$5\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben xx-xx
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\d)(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4$5\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben x-xx
-app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\d)(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3$4\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben x-xx
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\d)(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3$4\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben x-x förl.
-app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d) e förl.(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3 e förl.\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben x-x förl.
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d) e förl.(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3 e förl.\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben xx-x förl.
-app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d) e förl.(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4 e förl.\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben xx-x förl.
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d) e förl.(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4 e förl.\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben xx-xx förl.
-app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\d) e förl.(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4$5 e förl.\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben xx-xx förl.
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\d) e förl.(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4$5 e förl.\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben x-xx förl.
-app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\d) e förl.(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3$4 e förl.\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben x-xx förl.
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\d) e förl.(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3$4 e förl.\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben xx-x str.
-app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d) e str.(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4 e str.\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben xx-x str.
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d) e str.(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4 e str.\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben x-x str.
-app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d) e str.(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3 e str.\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben x-x str.
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d) e str.(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3 e str.\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben xx-xx str.
-app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\d) e str.(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4$5 e str.\n";
-app.activeDocument.changeGrep();
+      // fixa shift-tabben xx-xx str.
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)(\\d)–(\\d)(\\d) e str.(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2$3–$4$5 e str.\n";
+      app.activeDocument.changeGrep();
 
-// fixa shift-tabben x-xx str.
-app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\d) e str.(\\n)";
-app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3$4 e str.\n";
-app.activeDocument.changeGrep();
-// MATCHVINJETTER SLUT
+      // fixa shift-tabben x-xx str.
+      app.findGrepPreferences.findWhat = "(\\w) (\\d)–(\\d)(\\d) e str.(\\n)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{0008}$2–$3$4 e str.\n";
+      app.activeDocument.changeGrep();
+      // MATCHVINJETTER SLUT
 
-// fixa strecket rätt för telefonnummern efter matchvinjettautmatiken
-app.findGrepPreferences.findWhat = "06–(\\d)(\\d)(\\d)(\\d)( )(\\d)(\\d)(\\d)";
-app.changeGrepPreferences.changeTo = "06-$1$2$3$4$5$6$7$8";
-app.activeDocument.changeGrep();
+      // fixa strecket rätt för telefonnummern efter matchvinjettautmatiken
+      app.findGrepPreferences.findWhat = "06–(\\d)(\\d)(\\d)(\\d)( )(\\d)(\\d)(\\d)";
+      app.changeGrepPreferences.changeTo = "06-$1$2$3$4$5$6$7$8";
+      app.activeDocument.changeGrep();
 
-// fixa till korrekt blanksteg mellan tusental
-app.findGrepPreferences.findWhat = "(\\d) (\\d)(\\d)(\\d)";
-app.changeGrepPreferences.changeTo = "$1\\\x{2009}$2$3$4";
-app.activeDocument.changeGrep();
+      // fixa till korrekt blanksteg mellan tusental
+      app.findGrepPreferences.findWhat = "(\\d) (\\d)(\\d)(\\d)";
+      app.changeGrepPreferences.changeTo = "$1\\\x{2009}$2$3$4";
+      app.activeDocument.changeGrep();
 
-// fixa strecket rätt för telefonnummern (fix stupid)
-app.findGrepPreferences.findWhat = "06–(\\d)(\\d)(\\d)(\\d)(\\\x{2009})(\\d)(\\d)(\\d)";
-app.changeGrepPreferences.changeTo = "06-$1$2$3$4 $6$7$8";
-app.activeDocument.changeGrep();
+      // fixa strecket rätt för telefonnummern (fix stupid)
+      app.findGrepPreferences.findWhat = "06–(\\d)(\\d)(\\d)(\\d)(\\\x{2009})(\\d)(\\d)(\\d)";
+      app.changeGrepPreferences.changeTo = "06-$1$2$3$4 $6$7$8";
+      app.activeDocument.changeGrep();
 
-// fixa strecket rätt för telefonnummern (fix stupid)
-app.findGrepPreferences.findWhat = "06-(\\d)(\\d)(\\d)(\\d)(\\\x{2009})(\\d)(\\d)(\\d)";
-app.changeGrepPreferences.changeTo = "06-$1$2$3$4 $6$7$8";
-app.activeDocument.changeGrep();
+      // fixa strecket rätt för telefonnummern (fix stupid)
+      app.findGrepPreferences.findWhat = "06-(\\d)(\\d)(\\d)(\\d)(\\\x{2009})(\\d)(\\d)(\\d)";
+      app.changeGrepPreferences.changeTo = "06-$1$2$3$4 $6$7$8";
+      app.activeDocument.changeGrep();
 
-// töm grep innan skriptet avslutas
-app.findGrepPreferences = NothingEnum.nothing;
-app.changeGrepPreferences = NothingEnum.nothing;
-}
+      // töm grep innan skriptet avslutas
+      app.findGrepPreferences = NothingEnum.nothing;
+      app.changeGrepPreferences = NothingEnum.nothing;
+    }
