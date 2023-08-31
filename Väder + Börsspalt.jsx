@@ -20,15 +20,12 @@ var filnamn = dagens_vader;
 
 if (app.documents[0].pageItems.itemByName("borsen").isValid) {
     try {
-        // kör in fyra börsspalter så finns det på alla mallar i paletten sidor
-        for (i = 0; i < 4; i++) {
             var borsspalten = app.activeDocument.links.itemByName("borsen_Dummy.jpg").parent;
             var borsspalten_pdf = new File(serveradress + filmapp + "borsen/" + "Vasabladet.pdf");
             borsspalten.place(borsspalten_pdf);
-        }
     }
     catch (e) {
-        alert("Börsspalten har inte kommit ännu eller så är det problem med FTP-överföringen. Prova igen om en stund eller montera manuellt.");
+        alert("Börsspalten har inte kommit ännu.");
     }
 }
 
@@ -40,7 +37,7 @@ else if (app.documents[0].pageItems.itemByName("vader").isValid) {
         vader.place(vader_pdf);
     }
     catch (e) {
-        alert("Vädret har inte kommit ännu eller så är det problem med FTP-överföringen. Prova igen om en stund eller montera manuellt.");
+        alert("Vädret har inte kommit ännu.");
     }
 }
 
@@ -52,7 +49,7 @@ else if (app.documents[0].pageItems.itemByName("sydinvader").isValid) {
         sydinvader.place(sydinvader_pdf);
     }
     catch (e) {
-        alert("Vädret har inte kommit ännu eller så är det problem med FTP-överföringen. Prova igen om en stund eller montera manuellt.");
+        alert("Vädret har inte kommit ännu.");
     }
 }
 
